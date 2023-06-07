@@ -10,7 +10,7 @@ require (
 	github.com/cosmos/cosmos-sdk v0.45.10
 	github.com/cosmos/go-bip39 v1.0.0
 	github.com/cosmos/iavl v0.19.4
-	github.com/cosmos/ibc-go/v3 v3.0.0
+	github.com/cosmos/ibc-go/v6 v6.1.0
 	github.com/go-playground/validator/v10 v10.4.1
 	github.com/gogo/protobuf v1.3.3
 	github.com/golang/protobuf v1.5.3
