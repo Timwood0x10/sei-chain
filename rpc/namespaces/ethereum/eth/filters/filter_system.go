@@ -23,9 +23,9 @@ import (
 
 	"github.com/pkg/errors"
 
+	tmquery "github.com/tendermint/tendermint/internal/pubsub/query"
 	tmjson "github.com/tendermint/tendermint/libs/json"
 	"github.com/tendermint/tendermint/libs/log"
-	tmquery "github.com/tendermint/tendermint/libs/pubsub/query"
 	coretypes "github.com/tendermint/tendermint/rpc/coretypes"
 	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
 	tmtypes "github.com/tendermint/tendermint/types"
@@ -37,8 +37,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/evmos/ethermint/rpc/ethereum/pubsub"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/sei-protocol/sei-chain/rpc/ethereum/pubsub"
+	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 var (

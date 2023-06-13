@@ -22,7 +22,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	ethermint "github.com/evmos/ethermint/types"
+	ethermint "github.com/sei-protocol/sei-chain/types"
 )
 
 // NewTransactionLogs creates a new NewTransactionLogs instance.
