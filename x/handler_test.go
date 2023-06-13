@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/evmos/ethermint/x/evm/keeper"
+	"github.com/sei-protocol/sei-chain/x/evm/keeper"
 
 	sdkmath "cosmossdk.io/math"
 	"github.com/gogo/protobuf/proto"
