@@ -23,10 +23,10 @@ import (
 	errorsmod "cosmossdk.io/errors"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	"github.com/evmos/ethermint/x/evm/types"
-	evm "github.com/evmos/ethermint/x/evm/vm"
+	ethermint "github.com/sei-protocol/sei-chain/types"
+	"github.com/sei-protocol/sei-chain/x/evm/statedb"
+	"github.com/sei-protocol/sei-chain/x/evm/types"
+	evm "github.com/sei-protocol/sei-chain/x/evm/vm"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"

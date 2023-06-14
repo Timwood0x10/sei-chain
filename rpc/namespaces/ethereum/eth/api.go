@@ -28,11 +28,11 @@ import (
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/evmos/ethermint/rpc/backend"
+	"github.com/sei-protocol/sei-chain/rpc/backend"
 
-	rpctypes "github.com/evmos/ethermint/rpc/types"
-	ethermint "github.com/evmos/ethermint/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	rpctypes "github.com/sei-protocol/sei-chain/rpc/types"
+	ethermint "github.com/sei-protocol/sei-chain/types"
+	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 // The Ethereum API allows applications to connect to an Evmos node that is

@@ -41,10 +41,10 @@ import (
 	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/evmos/ethermint/server/config"
 	"github.com/sei-protocol/sei-chain/rpc/ethereum/pubsub"
 	rpcfilters "github.com/sei-protocol/sei-chain/rpc/namespaces/ethereum/eth/filters"
 	"github.com/sei-protocol/sei-chain/rpc/types"
+	"github.com/sei-protocol/sei-chain/server/config"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 

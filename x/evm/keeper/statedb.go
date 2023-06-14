@@ -25,9 +25,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	"github.com/evmos/ethermint/x/evm/types"
+	ethermint "github.com/sei-protocol/sei-chain/types"
+	"github.com/sei-protocol/sei-chain/x/evm/statedb"
+	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 var _ statedb.Keeper = &Keeper{}

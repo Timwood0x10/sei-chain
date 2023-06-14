@@ -4,8 +4,8 @@ import (
 	"math/big"
 
 	"github.com/evmos/ethermint/tests"
-	"github.com/evmos/ethermint/x/evm/statedb"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/sei-protocol/sei-chain/x/evm/statedb"
+	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 func (suite AnteTestSuite) TestSignatures() {

@@ -14,13 +14,13 @@ import (
 	ethlogger "github.com/ethereum/go-ethereum/eth/tracers/logger"
 	ethparams "github.com/ethereum/go-ethereum/params"
 	"github.com/evmos/ethermint/tests"
-	"github.com/evmos/ethermint/x/evm/statedb"
+	"github.com/sei-protocol/sei-chain/x/evm/statedb"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/evmos/ethermint/server/config"
-	ethermint "github.com/evmos/ethermint/types"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/sei-protocol/sei-chain/server/config"
+	ethermint "github.com/sei-protocol/sei-chain/types"
+	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 // Not valid Ethereum address

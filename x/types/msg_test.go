@@ -20,9 +20,9 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/evmos/ethermint/app"
-	"github.com/evmos/ethermint/encoding"
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/sei-protocol/sei-chain/app"
+	"github.com/sei-protocol/sei-chain/encoding"
+	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 const invalidFromAddress = "0x0000"

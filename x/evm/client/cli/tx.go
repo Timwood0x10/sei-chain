@@ -27,8 +27,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
-	rpctypes "github.com/evmos/ethermint/rpc/types"
-	"github.com/evmos/ethermint/x/evm/types"
+	rpctypes "github.com/sei-protocol/sei-chain/rpc/types"
+	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 // GetTxCmd returns the transaction commands for this module

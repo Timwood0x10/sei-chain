@@ -33,11 +33,11 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/evmos/ethermint/crypto/ethsecp256k1"
-	rpctypes "github.com/evmos/ethermint/rpc/types"
-	"github.com/evmos/ethermint/server/config"
-	ethermint "github.com/evmos/ethermint/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
+	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
+	rpctypes "github.com/sei-protocol/sei-chain/rpc/types"
+	"github.com/sei-protocol/sei-chain/server/config"
+	ethermint "github.com/sei-protocol/sei-chain/types"
+	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 )
 

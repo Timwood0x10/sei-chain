@@ -22,9 +22,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	rpctypes "github.com/evmos/ethermint/rpc/types"
-	evmtypes "github.com/evmos/ethermint/x/evm/types"
 	"github.com/pkg/errors"
+	rpctypes "github.com/sei-protocol/sei-chain/rpc/types"
+	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 	tmrpctypes "github.com/tendermint/tendermint/rpc/coretypes"
 )
 

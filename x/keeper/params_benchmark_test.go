@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"testing"
 
-	"github.com/evmos/ethermint/x/evm/types"
+	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 func BenchmarkSetParams(b *testing.B) {
