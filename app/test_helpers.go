@@ -8,6 +8,8 @@ import (
 	"time"
 
 	"github.com/CosmWasm/wasmd/x/wasm"
+	dexutils "github.com/Timwood0x10/sei-chain/x/dex/utils"
+	minttypes "github.com/Timwood0x10/sei-chain/x/mint/types"
 	crptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	"github.com/cosmos/cosmos-sdk/simapp"
 	cosmostestutil "github.com/cosmos/cosmos-sdk/testutil"
@@ -15,8 +17,6 @@ import (
 	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
 	"github.com/cosmos/cosmos-sdk/x/staking/teststaking"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	dexutils "github.com/sei-protocol/sei-chain/x/dex/utils"
-	minttypes "github.com/sei-protocol/sei-chain/x/mint/types"
 	"github.com/stretchr/testify/suite"
 	abci "github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/libs/log"

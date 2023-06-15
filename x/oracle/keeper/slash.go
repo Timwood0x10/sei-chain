@@ -3,9 +3,9 @@ package keeper
 import (
 	"strconv"
 
+	"github.com/Timwood0x10/sei-chain/x/oracle/types"
 	cosmostelemetry "github.com/cosmos/cosmos-sdk/telemetry"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/oracle/types"
 )
 
 // SlashAndResetCounters do slash any operator who over criteria & clear all operators miss counter to zero

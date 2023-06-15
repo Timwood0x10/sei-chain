@@ -6,9 +6,9 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/sei-protocol/sei-chain/app/apptesting"
-	"github.com/sei-protocol/sei-chain/x/tokenfactory/keeper"
-	"github.com/sei-protocol/sei-chain/x/tokenfactory/types"
+	"github.com/Timwood0x10/sei-chain/app/apptesting"
+	"github.com/Timwood0x10/sei-chain/x/tokenfactory/keeper"
+	"github.com/Timwood0x10/sei-chain/x/tokenfactory/types"
 )
 
 type KeeperTestSuite struct {

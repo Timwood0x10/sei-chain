@@ -2,6 +2,11 @@ package utils
 
 import (
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
+	dexkeeper "github.com/Timwood0x10/sei-chain/x/dex/keeper"
+	dextypes "github.com/Timwood0x10/sei-chain/x/dex/types"
+	epochtypes "github.com/Timwood0x10/sei-chain/x/epoch/types"
+	oracletypes "github.com/Timwood0x10/sei-chain/x/oracle/types"
+	tokenfactorytypes "github.com/Timwood0x10/sei-chain/x/tokenfactory/types"
 	aclsdktypes "github.com/cosmos/cosmos-sdk/types/accesscontrol"
 	acltypes "github.com/cosmos/cosmos-sdk/x/accesscontrol/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
@@ -11,11 +16,6 @@ import (
 	feegranttypes "github.com/cosmos/cosmos-sdk/x/feegrant"
 	slashingtypes "github.com/cosmos/cosmos-sdk/x/slashing/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	dexkeeper "github.com/sei-protocol/sei-chain/x/dex/keeper"
-	dextypes "github.com/sei-protocol/sei-chain/x/dex/types"
-	epochtypes "github.com/sei-protocol/sei-chain/x/epoch/types"
-	oracletypes "github.com/sei-protocol/sei-chain/x/oracle/types"
-	tokenfactorytypes "github.com/sei-protocol/sei-chain/x/tokenfactory/types"
 )
 
 const (

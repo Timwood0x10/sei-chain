@@ -3,9 +3,9 @@ package query
 import (
 	"context"
 
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

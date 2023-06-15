@@ -18,9 +18,9 @@ package statedb
 import (
 	"math/big"
 
+	"github.com/Timwood0x10/sei-chain/x/evm/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 // TxConfig encapulates the readonly information of current tx for `StateDB`.

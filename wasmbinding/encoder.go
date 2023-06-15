@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 
 	wasmvmtypes "github.com/CosmWasm/wasmvm/types"
+	dexwasm "github.com/Timwood0x10/sei-chain/x/dex/client/wasm"
+	tokenfactorywasm "github.com/Timwood0x10/sei-chain/x/tokenfactory/client/wasm"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	dexwasm "github.com/sei-protocol/sei-chain/x/dex/client/wasm"
-	tokenfactorywasm "github.com/sei-protocol/sei-chain/x/tokenfactory/client/wasm"
 )
 
 type SeiWasmMessage struct {

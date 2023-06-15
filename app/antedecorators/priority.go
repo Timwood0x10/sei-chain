@@ -3,8 +3,8 @@ package antedecorators
 import (
 	"math"
 
+	oracletypes "github.com/Timwood0x10/sei-chain/x/oracle/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	oracletypes "github.com/sei-protocol/sei-chain/x/oracle/types"
 )
 
 type PriorityDecorator struct{}

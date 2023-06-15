@@ -9,11 +9,11 @@ import (
 	abcitypes "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
+	"github.com/Timwood0x10/sei-chain/app"
+	"github.com/Timwood0x10/sei-chain/x/mint"
+	"github.com/Timwood0x10/sei-chain/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/simapp"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/sei-protocol/sei-chain/app"
-	"github.com/sei-protocol/sei-chain/x/mint"
-	"github.com/sei-protocol/sei-chain/x/mint/types"
 )
 
 func TestItCreatesModuleAccountOnInitBlock(t *testing.T) {
@@ -47,9 +47,9 @@ func TestNewProposalHandler(t *testing.T) {
 		12345,
 	)
 	updateMinterProposal := &types.UpdateMinterProposal{
-		Title: "Test Title",
+		Title:       "Test Title",
 		Description: "Test Description",
-		Minter: &newMinter,
+		Minter:      &newMinter,
 	}
 	err := handler(ctx, updateMinterProposal)
 	require.NoError(t, err)
@@ -63,9 +63,9 @@ func TestNewProposalHandler(t *testing.T) {
 		12345,
 	)
 	invalidProposal := &types.UpdateMinterProposal{
-		Title: "Invalid Minter",
+		Title:       "Invalid Minter",
 		Description: "Invalid Minter",
-		Minter: &invalidMinter,
+		Minter:      &invalidMinter,
 	}
 	err = handler(ctx, invalidProposal)
 	require.Error(t, err)

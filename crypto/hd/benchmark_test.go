@@ -3,8 +3,8 @@ package hd
 import (
 	"testing"
 
+	ethermint "github.com/Timwood0x10/sei-chain/types"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	ethermint "github.com/sei-protocol/sei-chain/types"
 )
 
 func BenchmarkEthSecp256k1Algo_Derive(b *testing.B) {

@@ -1,4 +1,4 @@
-module github.com/sei-protocol/sei-chain
+module github.com/Timwood0x10/sei-chain
 
 go 1.18
 
@@ -277,4 +277,5 @@ replace (
 	github.com/tendermint/tendermint => github.com/sei-protocol/sei-tendermint v0.2.21
 	github.com/tendermint/tm-db => github.com/sei-protocol/tm-db v0.0.4
 	google.golang.org/grpc => google.golang.org/grpc v1.33.2
+	//github.com/Timwood0x10/sei-chain => github.com/Timwood0x10/sei-chain 80b39c0801f2b11315113d3e76c1540c4bda7e45
 )

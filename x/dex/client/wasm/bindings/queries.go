@@ -1,6 +1,6 @@
 package bindings
 
-import "github.com/sei-protocol/sei-chain/x/dex/types"
+import "github.com/Timwood0x10/sei-chain/x/dex/types"
 
 type SeiDexQuery struct {
 	// queries the dex TWAPs

@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	keepertest "github.com/sei-protocol/sei-chain/testutil/keeper"
-	"github.com/sei-protocol/sei-chain/x/dex/contract"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
+	keepertest "github.com/Timwood0x10/sei-chain/testutil/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/contract"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )

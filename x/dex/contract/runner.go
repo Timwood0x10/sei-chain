@@ -5,10 +5,10 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/Timwood0x10/sei-chain/utils/datastructures"
+	"github.com/Timwood0x10/sei-chain/utils/logging"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/utils/datastructures"
-	"github.com/sei-protocol/sei-chain/utils/logging"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 const LogAfter = 10 * time.Second

@@ -17,9 +17,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	rpctypes "github.com/sei-protocol/sei-chain/rpc/types"
-	ethermint "github.com/sei-protocol/sei-chain/types"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
+	rpctypes "github.com/Timwood0x10/sei-chain/rpc/types"
+	ethermint "github.com/Timwood0x10/sei-chain/types"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"

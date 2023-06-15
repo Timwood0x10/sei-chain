@@ -6,12 +6,12 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/sei-protocol/sei-chain/app/ante"
-	"github.com/sei-protocol/sei-chain/server/config"
-	"github.com/sei-protocol/sei-chain/tests"
-	ethermint "github.com/sei-protocol/sei-chain/types"
-	"github.com/sei-protocol/sei-chain/x/evm/statedb"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
+	"github.com/Timwood0x10/sei-chain/app/ante"
+	"github.com/Timwood0x10/sei-chain/server/config"
+	"github.com/Timwood0x10/sei-chain/tests"
+	ethermint "github.com/Timwood0x10/sei-chain/types"
+	"github.com/Timwood0x10/sei-chain/x/evm/statedb"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 )
@@ -185,7 +185,7 @@ func (suite AnteTestSuite) TestEthGasConsumeDecorator() {
 	tx3 := evmtypes.NewTxContract(suite.app.EvmKeeper.ChainID(), 1, big.NewInt(10), tx3GasLimit, gasPrice, nil, nil, nil, &ethtypes.AccessList{{Address: addr, StorageKeys: nil}})
 
 	dynamicFeeTx := evmtypes.NewTxContract(suite.app.EvmKeeper.ChainID(), 1, big.NewInt(10), tx2GasLimit,
-		nil,                                                                                // gasPrice
+		nil, // gasPrice
 		new(big.Int).Add(baseFee, big.NewInt(evmtypes.DefaultPriorityReduction.Int64()*2)), // gasFeeCap
 		evmtypes.DefaultPriorityReduction.BigInt(),                                         // gasTipCap
 		nil, &ethtypes.AccessList{{Address: addr, StorageKeys: nil}})

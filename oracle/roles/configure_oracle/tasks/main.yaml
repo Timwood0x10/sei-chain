@@ -18,7 +18,7 @@
 
 - name: Clone repo and checkout latest branch #confirmed
   ansible.builtin.git:
-    repo: "https://{{ lookup('env', 'GIT_USER') }}:{{ lookup('env', 'GIT_ACCESS_TOKEN') }}@github.com/sei-protocol/sei-chain.git"
+    repo: "https://{{ lookup('env', 'GIT_USER') }}:{{ lookup('env', 'GIT_ACCESS_TOKEN') }}@github.com/Timwood0x10/sei-chain.git"
     dest: /home/ubuntu/sei-chain/
     single_branch: yes
     version: latest

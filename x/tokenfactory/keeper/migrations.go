@@ -3,8 +3,8 @@ package keeper
 import (
 	"strings"
 
+	"github.com/Timwood0x10/sei-chain/x/tokenfactory/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/tokenfactory/types"
 )
 
 const KeySeparator = "|"

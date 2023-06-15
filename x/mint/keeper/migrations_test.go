@@ -3,6 +3,8 @@ package keeper_test
 import (
 	"testing"
 
+	"github.com/Timwood0x10/sei-chain/x/mint/keeper"
+	"github.com/Timwood0x10/sei-chain/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/store"
@@ -11,8 +13,6 @@ import (
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
 	typesparams "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/sei-protocol/sei-chain/x/mint/keeper"
-	"github.com/sei-protocol/sei-chain/x/mint/types"
 	"github.com/stretchr/testify/require"
 	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
@@ -20,8 +20,8 @@ import (
 )
 
 type MockAccountKeeper struct {
-	ModuleAddress  sdk.AccAddress
-	ModuleAccount  authtypes.ModuleAccountI
+	ModuleAddress sdk.AccAddress
+	ModuleAccount authtypes.ModuleAccountI
 }
 
 func (m MockAccountKeeper) GetModuleAddress(name string) sdk.AccAddress {
@@ -65,10 +65,10 @@ func TestMigrate2to3(t *testing.T) {
 
 	// Set up the old Minter and Params
 	oldMinter := types.Version2Minter{
-		LastMintAmount:   sdk.NewDec(1000),
-		LastMintDate:     "2021-01-01",
-		LastMintHeight:   100,
-		Denom:            sdk.DefaultBondDenom,
+		LastMintAmount: sdk.NewDec(1000),
+		LastMintDate:   "2021-01-01",
+		LastMintHeight: 100,
+		Denom:          sdk.DefaultBondDenom,
 	}
 
 	oldTokenReleaseSchedule := []types.Version2ScheduledTokenRelease{

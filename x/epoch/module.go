@@ -12,15 +12,15 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
+	"github.com/Timwood0x10/sei-chain/utils/metrics"
+	"github.com/Timwood0x10/sei-chain/x/epoch/client/cli"
+	"github.com/Timwood0x10/sei-chain/x/epoch/keeper"
+	"github.com/Timwood0x10/sei-chain/x/epoch/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/sei-protocol/sei-chain/utils/metrics"
-	"github.com/sei-protocol/sei-chain/x/epoch/client/cli"
-	"github.com/sei-protocol/sei-chain/x/epoch/keeper"
-	"github.com/sei-protocol/sei-chain/x/epoch/types"
 )
 
 var (

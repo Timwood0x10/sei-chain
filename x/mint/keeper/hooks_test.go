@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	keepertest "github.com/sei-protocol/sei-chain/testutil/keeper"
-	dexcache "github.com/sei-protocol/sei-chain/x/dex/cache"
-	dextypes "github.com/sei-protocol/sei-chain/x/dex/types"
-	dexutils "github.com/sei-protocol/sei-chain/x/dex/utils"
-	"github.com/sei-protocol/sei-chain/x/epoch/types"
-	minttypes "github.com/sei-protocol/sei-chain/x/mint/types"
+	keepertest "github.com/Timwood0x10/sei-chain/testutil/keeper"
+	dexcache "github.com/Timwood0x10/sei-chain/x/dex/cache"
+	dextypes "github.com/Timwood0x10/sei-chain/x/dex/types"
+	dexutils "github.com/Timwood0x10/sei-chain/x/dex/utils"
+	"github.com/Timwood0x10/sei-chain/x/epoch/types"
+	minttypes "github.com/Timwood0x10/sei-chain/x/mint/types"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 

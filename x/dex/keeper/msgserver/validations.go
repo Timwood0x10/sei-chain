@@ -5,8 +5,8 @@ import (
 	"math"
 
 	wasmkeeper "github.com/CosmWasm/wasmd/x/wasm/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 // Since cosmwasm would amplify gas limit by a multiplier for its internal gas metering,

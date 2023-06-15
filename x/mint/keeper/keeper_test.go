@@ -4,11 +4,11 @@ import (
 	"testing"
 	"time"
 
-	epochTypes "github.com/sei-protocol/sei-chain/x/epoch/types"
-	mintKeeper "github.com/sei-protocol/sei-chain/x/mint/keeper"
-	"github.com/sei-protocol/sei-chain/x/mint/types"
-	mintTypes "github.com/sei-protocol/sei-chain/x/mint/types"
-	minttypes "github.com/sei-protocol/sei-chain/x/mint/types"
+	epochTypes "github.com/Timwood0x10/sei-chain/x/epoch/types"
+	mintKeeper "github.com/Timwood0x10/sei-chain/x/mint/keeper"
+	"github.com/Timwood0x10/sei-chain/x/mint/types"
+	mintTypes "github.com/Timwood0x10/sei-chain/x/mint/types"
+	minttypes "github.com/Timwood0x10/sei-chain/x/mint/types"
 	"github.com/stretchr/testify/require"
 )
 
@@ -18,24 +18,24 @@ func TestGetNextScheduledTokenRelease(t *testing.T) {
 	currentTime := time.Now().UTC()
 	epoch := epochTypes.Epoch{
 		CurrentEpochStartTime: currentTime,
-		CurrentEpochHeight: 100,
+		CurrentEpochHeight:    100,
 	}
 	currentMinter := mintTypes.DefaultInitialMinter()
 
 	tokenReleaseSchedule := []mintTypes.ScheduledTokenRelease{
 		{
-			StartDate: currentTime.AddDate(0, 0, 30).Format(minttypes.TokenReleaseDateFormat),
-			EndDate: currentTime.AddDate(0, 2, 0).Format(minttypes.TokenReleaseDateFormat),
+			StartDate:          currentTime.AddDate(0, 0, 30).Format(minttypes.TokenReleaseDateFormat),
+			EndDate:            currentTime.AddDate(0, 2, 0).Format(minttypes.TokenReleaseDateFormat),
 			TokenReleaseAmount: 200,
 		},
 		{
-			StartDate: currentTime.AddDate(1, 0, 0).Format(minttypes.TokenReleaseDateFormat),
-			EndDate: currentTime.AddDate(2, 0, 0).Format(minttypes.TokenReleaseDateFormat),
+			StartDate:          currentTime.AddDate(1, 0, 0).Format(minttypes.TokenReleaseDateFormat),
+			EndDate:            currentTime.AddDate(2, 0, 0).Format(minttypes.TokenReleaseDateFormat),
 			TokenReleaseAmount: 300,
 		},
 		{
-			StartDate: currentTime.AddDate(0, 0, 1).Format(minttypes.TokenReleaseDateFormat),
-			EndDate: currentTime.AddDate(0, 0, 15).Format(minttypes.TokenReleaseDateFormat),
+			StartDate:          currentTime.AddDate(0, 0, 1).Format(minttypes.TokenReleaseDateFormat),
+			EndDate:            currentTime.AddDate(0, 0, 15).Format(minttypes.TokenReleaseDateFormat),
 			TokenReleaseAmount: 100,
 		},
 	}
@@ -100,7 +100,7 @@ func TestGetOrUpdateLatestMinter(t *testing.T) {
 	t.Run("No ongoing release, but there's a scheduled release", func(t *testing.T) {
 		mintKeeper.SetMinter(ctx, mintTypes.NewMinter(
 			currentTime.Format(minttypes.TokenReleaseDateFormat),
-			currentTime.AddDate(1,0,0).Format(minttypes.TokenReleaseDateFormat),
+			currentTime.AddDate(1, 0, 0).Format(minttypes.TokenReleaseDateFormat),
 			"usei",
 			1000,
 		))
@@ -115,22 +115,22 @@ func TestGetOrUpdateLatestMinter(t *testing.T) {
 		params := mintKeeper.GetParams(ctx)
 		params.TokenReleaseSchedule = []types.ScheduledTokenRelease{
 			{
-				StartDate:          currentTime.AddDate(0,0,0).Format(minttypes.TokenReleaseDateFormat),
-				EndDate:            currentTime.AddDate(0,0,0).Format(minttypes.TokenReleaseDateFormat),
+				StartDate:          currentTime.AddDate(0, 0, 0).Format(minttypes.TokenReleaseDateFormat),
+				EndDate:            currentTime.AddDate(0, 0, 0).Format(minttypes.TokenReleaseDateFormat),
 				TokenReleaseAmount: 1000,
 			},
 		}
 		mintKeeper.SetParams(ctx, params)
 
 		minter := types.Minter{
-			StartDate: currentTime.Format(minttypes.TokenReleaseDateFormat),
-			EndDate: currentTime.Format(minttypes.TokenReleaseDateFormat),
-			Denom: "usei",
-			TotalMintAmount: 100,
+			StartDate:           currentTime.Format(minttypes.TokenReleaseDateFormat),
+			EndDate:             currentTime.Format(minttypes.TokenReleaseDateFormat),
+			Denom:               "usei",
+			TotalMintAmount:     100,
 			RemainingMintAmount: 0,
-			LastMintAmount: 100,
-			LastMintDate: "2023-04-01",
-			LastMintHeight: 0,
+			LastMintAmount:      100,
+			LastMintDate:        "2023-04-01",
+			LastMintHeight:      0,
 		}
 		mintKeeper.SetMinter(ctx, minter)
 
@@ -144,18 +144,17 @@ func TestGetOrUpdateLatestMinter(t *testing.T) {
 		mintKeeper.SetMinter(ctx, mintTypes.DefaultInitialMinter())
 	})
 
-
 	t.Run("TokenReleaseSchedule not sorted", func(t *testing.T) {
 		params := mintKeeper.GetParams(ctx)
 		params.TokenReleaseSchedule = []types.ScheduledTokenRelease{
 			{
-				StartDate:          currentTime.AddDate(0,20,0).Format(minttypes.TokenReleaseDateFormat),
-				EndDate:            currentTime.AddDate(0,45,0).Format(minttypes.TokenReleaseDateFormat),
+				StartDate:          currentTime.AddDate(0, 20, 0).Format(minttypes.TokenReleaseDateFormat),
+				EndDate:            currentTime.AddDate(0, 45, 0).Format(minttypes.TokenReleaseDateFormat),
 				TokenReleaseAmount: 2000,
 			},
 			{
 				StartDate:          currentTime.Format(minttypes.TokenReleaseDateFormat),
-				EndDate:            currentTime.AddDate(0,15,0).Format(minttypes.TokenReleaseDateFormat),
+				EndDate:            currentTime.AddDate(0, 15, 0).Format(minttypes.TokenReleaseDateFormat),
 				TokenReleaseAmount: 1000,
 			},
 		}

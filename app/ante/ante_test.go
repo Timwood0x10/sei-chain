@@ -25,12 +25,12 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
+	"github.com/Timwood0x10/sei-chain/app/ante"
+	"github.com/Timwood0x10/sei-chain/crypto/ethsecp256k1"
+	"github.com/Timwood0x10/sei-chain/tests"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	"github.com/ethereum/go-ethereum/core/types"
 	ethparams "github.com/ethereum/go-ethereum/params"
-	"github.com/sei-protocol/sei-chain/app/ante"
-	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
-	"github.com/sei-protocol/sei-chain/tests"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types/v1beta1"

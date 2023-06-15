@@ -3,9 +3,9 @@ package migrations
 import (
 	"encoding/binary"
 
+	"github.com/Timwood0x10/sei-chain/x/dex/keeper"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/sei-protocol/sei-chain/x/dex/keeper"
 )
 
 /**

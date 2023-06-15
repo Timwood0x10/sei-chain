@@ -8,9 +8,9 @@ import (
 	"math/rand"
 	"time"
 
+	"github.com/Timwood0x10/sei-chain/x/mint/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/sei-protocol/sei-chain/x/mint/types"
 )
 
 // RandomizedGenState generates a random GenesisState for mint.

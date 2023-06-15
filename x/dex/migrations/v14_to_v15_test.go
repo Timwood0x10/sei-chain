@@ -3,9 +3,9 @@ package migrations_test
 import (
 	"testing"
 
-	keepertest "github.com/sei-protocol/sei-chain/testutil/keeper"
-	"github.com/sei-protocol/sei-chain/x/dex/migrations"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
+	keepertest "github.com/Timwood0x10/sei-chain/testutil/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/migrations"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	"github.com/stretchr/testify/require"
 )
 

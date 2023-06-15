@@ -4,9 +4,9 @@ import (
 	"context"
 	"fmt"
 
+	appparams "github.com/Timwood0x10/sei-chain/app/params"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	appparams "github.com/sei-protocol/sei-chain/app/params"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 func (k msgServer) ContractDepositRent(goCtx context.Context, msg *types.MsgContractDepositRent) (*types.MsgContractDepositRentResponse, error) {

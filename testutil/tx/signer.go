@@ -22,7 +22,7 @@ import (
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
+	"github.com/Timwood0x10/sei-chain/crypto/ethsecp256k1"
 )
 
 var _ keyring.Signer = &Signer{}

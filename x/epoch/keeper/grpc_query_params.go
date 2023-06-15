@@ -3,8 +3,8 @@ package keeper
 import (
 	"context"
 
+	"github.com/Timwood0x10/sei-chain/x/epoch/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/epoch/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

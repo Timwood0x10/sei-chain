@@ -23,7 +23,7 @@ import (
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 	"github.com/tendermint/tendermint/types"
 
-	ethermint "github.com/sei-protocol/sei-chain/types"
+	ethermint "github.com/Timwood0x10/sei-chain/types"
 )
 
 const (

@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/sei-protocol/sei-chain/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Timwood0x10/sei-chain/blob/main/LICENSE
 package filters
 
 import (
@@ -21,8 +21,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/sei-protocol/sei-chain/rpc/backend"
-	"github.com/sei-protocol/sei-chain/rpc/types"
+	"github.com/Timwood0x10/sei-chain/rpc/backend"
+	"github.com/Timwood0x10/sei-chain/rpc/types"
 
 	"github.com/pkg/errors"
 	"github.com/tendermint/tendermint/libs/log"

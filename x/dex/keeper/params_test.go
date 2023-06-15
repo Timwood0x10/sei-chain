@@ -3,8 +3,8 @@ package keeper_test
 import (
 	"testing"
 
-	testkeeper "github.com/sei-protocol/sei-chain/testutil/keeper"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
+	testkeeper "github.com/Timwood0x10/sei-chain/testutil/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	"github.com/stretchr/testify/require"
 )
 

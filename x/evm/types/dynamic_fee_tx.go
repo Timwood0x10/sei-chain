@@ -25,7 +25,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/sei-protocol/sei-chain/types"
+	"github.com/Timwood0x10/sei-chain/types"
 )
 
 func newDynamicFeeTx(tx *ethtypes.Transaction) (*DynamicFeeTx, error) {

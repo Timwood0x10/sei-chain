@@ -3,9 +3,9 @@ package types_test
 import (
 	"testing"
 
+	"github.com/Timwood0x10/sei-chain/tests"
+	"github.com/Timwood0x10/sei-chain/types"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/sei-protocol/sei-chain/tests"
-	"github.com/sei-protocol/sei-chain/types"
 	"github.com/stretchr/testify/require"
 )
 

@@ -12,14 +12,14 @@ import (
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
+	"github.com/Timwood0x10/sei-chain/crypto/ethsecp256k1"
+	"github.com/Timwood0x10/sei-chain/tests"
+	"github.com/Timwood0x10/sei-chain/x/evm/statedb"
+	"github.com/Timwood0x10/sei-chain/x/evm/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
-	"github.com/sei-protocol/sei-chain/tests"
-	"github.com/sei-protocol/sei-chain/x/evm/statedb"
-	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 func (suite *KeeperTestSuite) TestCreateAccount() {

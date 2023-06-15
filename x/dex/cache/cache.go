@@ -8,8 +8,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/sei-protocol/sei-chain/utils/datastructures"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
+	"github.com/Timwood0x10/sei-chain/utils/datastructures"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 )
 
 const SynchronizationTimeoutInSeconds = 5

@@ -1,9 +1,9 @@
 package multi
 
 import (
+	"github.com/Timwood0x10/sei-chain/store/whitelist/cachemulti"
+	"github.com/Timwood0x10/sei-chain/store/whitelist/kv"
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/sei-protocol/sei-chain/store/whitelist/cachemulti"
-	"github.com/sei-protocol/sei-chain/store/whitelist/kv"
 )
 
 type Store struct {

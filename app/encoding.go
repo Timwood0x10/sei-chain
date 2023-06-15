@@ -1,8 +1,8 @@
 package app
 
 import (
+	"github.com/Timwood0x10/sei-chain/app/params"
 	"github.com/cosmos/cosmos-sdk/std"
-	"github.com/sei-protocol/sei-chain/app/params"
 )
 
 // MakeEncodingConfig creates an EncodingConfig for testing.

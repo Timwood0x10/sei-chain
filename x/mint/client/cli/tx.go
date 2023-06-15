@@ -9,12 +9,12 @@ import (
 	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
 	"github.com/spf13/cobra"
 
+	mintrest "github.com/Timwood0x10/sei-chain/x/mint/client/rest"
+	"github.com/Timwood0x10/sei-chain/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/client/tx"
 	govclient "github.com/cosmos/cosmos-sdk/x/gov/client"
-	mintrest "github.com/sei-protocol/sei-chain/x/mint/client/rest"
-	"github.com/sei-protocol/sei-chain/x/mint/types"
 )
 
 var UpdateMinterHandler = govclient.NewProposalHandler(MsgUpdateMinterProposalCmd, mintrest.UpdateResourceDependencyProposalRESTHandler)

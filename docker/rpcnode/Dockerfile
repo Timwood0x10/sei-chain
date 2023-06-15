@@ -4,7 +4,7 @@ RUN apt-get update && \
 
 VOLUME [ "/sei-protocol" ]
 VOLUME [ "/root/go/pkg/mod" ]
-WORKDIR /sei-protocol/sei-chain
+WORKDIR /Timwood0x10/sei-chain
 
 EXPOSE 26656 26657 26658 9090 9091
 

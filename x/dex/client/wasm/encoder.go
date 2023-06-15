@@ -3,9 +3,9 @@ package wasm
 import (
 	"encoding/json"
 
+	"github.com/Timwood0x10/sei-chain/wasmbinding/bindings"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/wasmbinding/bindings"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 func EncodeDexPlaceOrders(rawMsg json.RawMessage, sender sdk.AccAddress) ([]sdk.Msg, error) {

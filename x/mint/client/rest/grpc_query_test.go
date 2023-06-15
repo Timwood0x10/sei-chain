@@ -14,8 +14,8 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
+	minttypes "github.com/Timwood0x10/sei-chain/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/testutil/network"
-	minttypes "github.com/sei-protocol/sei-chain/x/mint/types"
 )
 
 type IntegrationTestSuite struct {

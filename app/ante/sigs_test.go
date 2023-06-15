@@ -3,9 +3,9 @@ package ante_test
 import (
 	"math/big"
 
-	"github.com/sei-protocol/sei-chain/tests"
-	"github.com/sei-protocol/sei-chain/x/evm/statedb"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
+	"github.com/Timwood0x10/sei-chain/tests"
+	"github.com/Timwood0x10/sei-chain/x/evm/statedb"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 )
 
 func (suite AnteTestSuite) TestSignatures() {

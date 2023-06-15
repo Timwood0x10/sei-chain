@@ -19,12 +19,12 @@ import (
 	"math/big"
 
 	errorsmod "cosmossdk.io/errors"
+	"github.com/Timwood0x10/sei-chain/x/evm/statedb"
+	"github.com/Timwood0x10/sei-chain/x/evm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core"
 	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/sei-protocol/sei-chain/x/evm/statedb"
-	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 // EVMConfig creates the EVMConfig based on current state

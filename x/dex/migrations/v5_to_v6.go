@@ -4,11 +4,11 @@ import (
 	"errors"
 	"fmt"
 
+	"github.com/Timwood0x10/sei-chain/x/dex/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/dex/keeper"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 // This migration updates contract info to match the new data format

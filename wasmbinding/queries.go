@@ -3,18 +3,18 @@ package wasmbinding
 import (
 	"encoding/json"
 
+	dexwasm "github.com/Timwood0x10/sei-chain/x/dex/client/wasm"
+	dexbindings "github.com/Timwood0x10/sei-chain/x/dex/client/wasm/bindings"
+	dextypes "github.com/Timwood0x10/sei-chain/x/dex/types"
+	epochwasm "github.com/Timwood0x10/sei-chain/x/epoch/client/wasm"
+	epochbindings "github.com/Timwood0x10/sei-chain/x/epoch/client/wasm/bindings"
+	epochtypes "github.com/Timwood0x10/sei-chain/x/epoch/types"
+	oraclewasm "github.com/Timwood0x10/sei-chain/x/oracle/client/wasm"
+	oraclebindings "github.com/Timwood0x10/sei-chain/x/oracle/client/wasm/bindings"
+	oracletypes "github.com/Timwood0x10/sei-chain/x/oracle/types"
+	tokenfactorywasm "github.com/Timwood0x10/sei-chain/x/tokenfactory/client/wasm"
+	tokenfactorytypes "github.com/Timwood0x10/sei-chain/x/tokenfactory/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	dexwasm "github.com/sei-protocol/sei-chain/x/dex/client/wasm"
-	dexbindings "github.com/sei-protocol/sei-chain/x/dex/client/wasm/bindings"
-	dextypes "github.com/sei-protocol/sei-chain/x/dex/types"
-	epochwasm "github.com/sei-protocol/sei-chain/x/epoch/client/wasm"
-	epochbindings "github.com/sei-protocol/sei-chain/x/epoch/client/wasm/bindings"
-	epochtypes "github.com/sei-protocol/sei-chain/x/epoch/types"
-	oraclewasm "github.com/sei-protocol/sei-chain/x/oracle/client/wasm"
-	oraclebindings "github.com/sei-protocol/sei-chain/x/oracle/client/wasm/bindings"
-	oracletypes "github.com/sei-protocol/sei-chain/x/oracle/types"
-	tokenfactorywasm "github.com/sei-protocol/sei-chain/x/tokenfactory/client/wasm"
-	tokenfactorytypes "github.com/sei-protocol/sei-chain/x/tokenfactory/types"
 )
 
 type QueryPlugin struct {

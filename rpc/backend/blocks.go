@@ -21,6 +21,8 @@ import (
 	"math/big"
 	"strconv"
 
+	rpctypes "github.com/Timwood0x10/sei-chain/rpc/types"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	grpctypes "github.com/cosmos/cosmos-sdk/types/grpc"
 	"github.com/ethereum/go-ethereum/common"
@@ -28,8 +30,6 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/trie"
 	"github.com/pkg/errors"
-	rpctypes "github.com/sei-protocol/sei-chain/rpc/types"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 	tmrpctypes "github.com/tendermint/tendermint/rpc/coretypes"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"

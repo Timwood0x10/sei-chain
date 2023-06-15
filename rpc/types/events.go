@@ -12,17 +12,17 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/sei-protocol/sei-chain/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Timwood0x10/sei-chain/blob/main/LICENSE
 package types
 
 import (
 	"fmt"
 	"strconv"
 
+	ethermint "github.com/Timwood0x10/sei-chain/types"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
-	ethermint "github.com/sei-protocol/sei-chain/types"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmrpctypes "github.com/tendermint/tendermint/rpc/coretypes"
 )
@@ -188,7 +188,7 @@ func (p *ParsedTxs) newTx(attrs []abci.EventAttribute) error {
 
 // updateTx updates an exiting tx from events, called during parsing.
 // In event format 2, we update the tx with the attributes of the second `ethereum_tx` event,
-// Due to bug https://github.com/sei-protocol/sei-chain/issues/1175, the first `ethereum_tx` event may emit incorrect tx hash,
+// Due to bug https://github.com/Timwood0x10/sei-chain/issues/1175, the first `ethereum_tx` event may emit incorrect tx hash,
 // so we prefer the second event and override the first one.
 func (p *ParsedTxs) updateTx(eventIndex int, attrs []abci.EventAttribute) error {
 	tx := NewParsedTx(eventIndex)

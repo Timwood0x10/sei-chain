@@ -12,10 +12,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	cryptocodec "github.com/sei-protocol/sei-chain/crypto/codec"
-	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
-	ethermintcodec "github.com/sei-protocol/sei-chain/encoding/codec"
-	"github.com/sei-protocol/sei-chain/types"
+	cryptocodec "github.com/Timwood0x10/sei-chain/crypto/codec"
+	"github.com/Timwood0x10/sei-chain/crypto/ethsecp256k1"
+	ethermintcodec "github.com/Timwood0x10/sei-chain/encoding/codec"
+	"github.com/Timwood0x10/sei-chain/types"
 )
 
 func init() {

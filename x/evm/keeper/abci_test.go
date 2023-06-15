@@ -1,7 +1,7 @@
 package keeper_test
 
 import (
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	"github.com/tendermint/tendermint/abci/types"
 )
 

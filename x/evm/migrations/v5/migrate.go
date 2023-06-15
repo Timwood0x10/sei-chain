@@ -1,12 +1,12 @@
 package v5
 
 import (
+	"github.com/Timwood0x10/sei-chain/x/evm/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/evm/types"
 
-	v5types "github.com/sei-protocol/sei-chain/x/evm/migrations/v5/types"
+	v5types "github.com/Timwood0x10/sei-chain/x/evm/migrations/v5/types"
 )
 
 // MigrateStore migrates the x/evm module state from the consensus version 4 to

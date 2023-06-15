@@ -1,6 +1,6 @@
 package bindings
 
-import "github.com/sei-protocol/sei-chain/x/epoch/types"
+import "github.com/Timwood0x10/sei-chain/x/epoch/types"
 
 type SeiEpochQuery struct {
 	// queries the current Epoch

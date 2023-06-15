@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/sei-protocol/sei-chain/tests"
+	"github.com/Timwood0x10/sei-chain/tests"
 
 	"github.com/ethereum/go-ethereum/common"
 )

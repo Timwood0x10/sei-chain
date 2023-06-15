@@ -3,7 +3,7 @@ package utils
 import (
 	"context"
 
-	dexcache "github.com/sei-protocol/sei-chain/x/dex/cache"
+	dexcache "github.com/Timwood0x10/sei-chain/x/dex/cache"
 )
 
 type MemStateKeyType string

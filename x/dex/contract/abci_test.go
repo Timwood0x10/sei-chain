@@ -4,12 +4,12 @@ import (
 	"testing"
 	"time"
 
+	keepertest "github.com/Timwood0x10/sei-chain/testutil/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/contract"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
+	minttypes "github.com/Timwood0x10/sei-chain/x/mint/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	keepertest "github.com/sei-protocol/sei-chain/testutil/keeper"
-	"github.com/sei-protocol/sei-chain/x/dex/contract"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
-	minttypes "github.com/sei-protocol/sei-chain/x/mint/types"
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )

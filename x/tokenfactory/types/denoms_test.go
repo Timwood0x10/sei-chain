@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	appparams "github.com/sei-protocol/sei-chain/app/params"
-	"github.com/sei-protocol/sei-chain/x/tokenfactory/types"
+	appparams "github.com/Timwood0x10/sei-chain/app/params"
+	"github.com/Timwood0x10/sei-chain/x/tokenfactory/types"
 )
 
 func TestDecomposeDenoms(t *testing.T) {

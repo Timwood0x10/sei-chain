@@ -3,11 +3,11 @@ package msgserver_test
 import (
 	"testing"
 
+	fuzzutils "github.com/Timwood0x10/sei-chain/testutil/fuzzing"
+	keepertest "github.com/Timwood0x10/sei-chain/testutil/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/keeper/msgserver"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	fuzzutils "github.com/sei-protocol/sei-chain/testutil/fuzzing"
-	keepertest "github.com/sei-protocol/sei-chain/testutil/keeper"
-	"github.com/sei-protocol/sei-chain/x/dex/keeper/msgserver"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,12 +6,12 @@ import (
 	"strings"
 	"time"
 
+	"github.com/Timwood0x10/sei-chain/utils"
+	"github.com/Timwood0x10/sei-chain/utils/logging"
+	"github.com/Timwood0x10/sei-chain/utils/metrics"
+	"github.com/Timwood0x10/sei-chain/x/dex/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/utils"
-	"github.com/sei-protocol/sei-chain/utils/logging"
-	"github.com/sei-protocol/sei-chain/utils/metrics"
-	"github.com/sei-protocol/sei-chain/x/dex/keeper"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 const ErrWasmModuleInstCPUFeatureLiteral = "Error instantiating module: CpuFeature"

@@ -1,7 +1,7 @@
 package query
 
 import (
-	"github.com/sei-protocol/sei-chain/x/dex/types"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 )
 
 var _ types.QueryServer = KeeperWrapper{}

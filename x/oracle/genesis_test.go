@@ -5,9 +5,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/sei-protocol/sei-chain/x/oracle"
-	"github.com/sei-protocol/sei-chain/x/oracle/keeper"
-	"github.com/sei-protocol/sei-chain/x/oracle/types"
+	"github.com/Timwood0x10/sei-chain/x/oracle"
+	"github.com/Timwood0x10/sei-chain/x/oracle/keeper"
+	"github.com/Timwood0x10/sei-chain/x/oracle/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

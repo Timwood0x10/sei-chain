@@ -1,8 +1,8 @@
 package contract
 
 import (
-	"github.com/sei-protocol/sei-chain/utils/datastructures"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
+	"github.com/Timwood0x10/sei-chain/utils/datastructures"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 )
 
 type node struct {

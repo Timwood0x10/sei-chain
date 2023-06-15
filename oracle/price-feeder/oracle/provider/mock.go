@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/sei-protocol/sei-chain/oracle/price-feeder/oracle/types"
+	"github.com/Timwood0x10/sei-chain/oracle/price-feeder/oracle/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

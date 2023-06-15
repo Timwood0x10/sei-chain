@@ -2,11 +2,11 @@ package contract
 
 import (
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/Timwood0x10/sei-chain/utils"
+	"github.com/Timwood0x10/sei-chain/x/dex/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/utils"
-	"github.com/sei-protocol/sei-chain/x/dex/keeper"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 var DexWhitelistedKeys = []string{

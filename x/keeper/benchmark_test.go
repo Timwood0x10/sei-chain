@@ -11,9 +11,9 @@ import (
 	authante "github.com/cosmos/cosmos-sdk/x/auth/ante"
 	"github.com/ethereum/go-ethereum/common"
 
+	ethermint "github.com/Timwood0x10/sei-chain/types"
+	"github.com/Timwood0x10/sei-chain/x/evm/types"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	ethermint "github.com/sei-protocol/sei-chain/types"
-	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 func SetupContract(b *testing.B) (*KeeperTestSuite, common.Address) {

@@ -1,7 +1,7 @@
 package wasm
 
 import (
-	tokenfactorykeeper "github.com/sei-protocol/sei-chain/x/tokenfactory/keeper"
+	tokenfactorykeeper "github.com/Timwood0x10/sei-chain/x/tokenfactory/keeper"
 )
 
 type TokenFactoryWasmQueryHandler struct {

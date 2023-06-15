@@ -3,10 +3,10 @@ package ante_test
 import (
 	"math/big"
 
+	"github.com/Timwood0x10/sei-chain/app/ante"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/app/ante"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 func (suite AnteTestSuite) TestEthSetupContextDecorator() {

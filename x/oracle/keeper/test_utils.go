@@ -1,12 +1,12 @@
-//nolint
+// nolint
 package keeper
 
 import (
 	"testing"
 	"time"
 
-	"github.com/sei-protocol/sei-chain/x/oracle/types"
-	"github.com/sei-protocol/sei-chain/x/oracle/utils"
+	"github.com/Timwood0x10/sei-chain/x/oracle/types"
+	"github.com/Timwood0x10/sei-chain/x/oracle/utils"
 	"github.com/stretchr/testify/require"
 
 	"github.com/tendermint/tendermint/crypto"

@@ -30,14 +30,14 @@ import (
 	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
 	ibcante "github.com/cosmos/ibc-go/v6/modules/core/ante"
 
+	"github.com/Timwood0x10/sei-chain/crypto/ethsecp256k1"
+	"github.com/Timwood0x10/sei-chain/ethereum/eip712"
+	ethermint "github.com/Timwood0x10/sei-chain/types"
 	ethcrypto "github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/crypto/secp256k1"
 	"github.com/ethereum/go-ethereum/signer/core/apitypes"
-	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
-	"github.com/sei-protocol/sei-chain/ethereum/eip712"
-	ethermint "github.com/sei-protocol/sei-chain/types"
 
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 )
 
 var ethermintCodec codec.ProtoCodecMarshaler

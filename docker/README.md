@@ -18,7 +18,7 @@ https://docs.docker.com/compose/install/other/
 
 ## Local Cluster
 
-Detailed instruction: see the `Makefile` in the root of [the repo](https://github.com/sei-protocol/sei-chain/blob/master/Makefile) 
+Detailed instruction: see the `Makefile` in the root of [the repo](https://github.com/Timwood0x10/sei-chain/blob/master/Makefile) 
 
 **To start a single local node (Not Recommended)**
 

@@ -4,12 +4,12 @@ import (
 	"math/big"
 
 	sdkmath "cosmossdk.io/math"
+	"github.com/Timwood0x10/sei-chain/x/evm/keeper"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	ethparams "github.com/ethereum/go-ethereum/params"
-	"github.com/sei-protocol/sei-chain/x/evm/keeper"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 func (suite *KeeperTestSuite) TestCheckSenderBalance() {

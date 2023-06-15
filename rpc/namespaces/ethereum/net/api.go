@@ -19,8 +19,8 @@ import (
 	"context"
 	"fmt"
 
+	ethermint "github.com/Timwood0x10/sei-chain/types"
 	"github.com/cosmos/cosmos-sdk/client"
-	ethermint "github.com/sei-protocol/sei-chain/types"
 	rpcclient "github.com/tendermint/tendermint/rpc/client"
 )
 

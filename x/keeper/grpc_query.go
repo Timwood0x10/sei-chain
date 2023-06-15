@@ -39,9 +39,9 @@ import (
 	"github.com/ethereum/go-ethereum/core/vm"
 	ethparams "github.com/ethereum/go-ethereum/params"
 
-	ethermint "github.com/sei-protocol/sei-chain/types"
-	"github.com/sei-protocol/sei-chain/x/evm/statedb"
-	"github.com/sei-protocol/sei-chain/x/evm/types"
+	ethermint "github.com/Timwood0x10/sei-chain/types"
+	"github.com/Timwood0x10/sei-chain/x/evm/statedb"
+	"github.com/Timwood0x10/sei-chain/x/evm/types"
 )
 
 var _ types.QueryServer = Keeper{}

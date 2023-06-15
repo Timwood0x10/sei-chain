@@ -6,7 +6,7 @@ import (
 
 	rand "github.com/tendermint/tendermint/libs/rand"
 
-	"github.com/sei-protocol/sei-chain/ethereum/eip712"
+	"github.com/Timwood0x10/sei-chain/ethereum/eip712"
 	"github.com/tidwall/gjson"
 	"github.com/tidwall/sjson"
 )

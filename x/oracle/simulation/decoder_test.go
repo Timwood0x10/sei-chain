@@ -11,10 +11,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/kv"
 
-	"github.com/sei-protocol/sei-chain/x/oracle/keeper"
-	sim "github.com/sei-protocol/sei-chain/x/oracle/simulation"
-	"github.com/sei-protocol/sei-chain/x/oracle/types"
-	"github.com/sei-protocol/sei-chain/x/oracle/utils"
+	"github.com/Timwood0x10/sei-chain/x/oracle/keeper"
+	sim "github.com/Timwood0x10/sei-chain/x/oracle/simulation"
+	"github.com/Timwood0x10/sei-chain/x/oracle/types"
+	"github.com/Timwood0x10/sei-chain/x/oracle/utils"
 )
 
 var (

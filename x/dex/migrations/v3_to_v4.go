@@ -1,9 +1,9 @@
 package migrations
 
 import (
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 func PriceSnapshotUpdate(ctx sdk.Context, paramStore paramtypes.Subspace) error {

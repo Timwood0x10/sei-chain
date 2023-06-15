@@ -3,8 +3,8 @@ package query
 import (
 	"context"
 
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 func (k KeeperWrapper) GetTwaps(goCtx context.Context, req *types.QueryGetTwapsRequest) (*types.QueryGetTwapsResponse, error) {

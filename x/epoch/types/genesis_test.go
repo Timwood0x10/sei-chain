@@ -3,7 +3,7 @@ package types_test
 import (
 	"testing"
 
-	"github.com/sei-protocol/sei-chain/x/epoch/types"
+	"github.com/Timwood0x10/sei-chain/x/epoch/types"
 	"github.com/stretchr/testify/require"
 )
 

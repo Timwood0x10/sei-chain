@@ -22,8 +22,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	errortypes "github.com/cosmos/cosmos-sdk/types/errors"
 
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 // MinGasPriceDecorator will check if the transaction's fee is at least as large

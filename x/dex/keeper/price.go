@@ -3,9 +3,9 @@ package keeper
 import (
 	"encoding/binary"
 
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 func (k Keeper) SetPriceState(ctx sdk.Context, price types.Price, contractAddr string) {

@@ -1,9 +1,9 @@
 package keeper_test
 
 import (
+	evmkeeper "github.com/Timwood0x10/sei-chain/x/evm/keeper"
+	"github.com/Timwood0x10/sei-chain/x/evm/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	evmkeeper "github.com/sei-protocol/sei-chain/x/evm/keeper"
-	"github.com/sei-protocol/sei-chain/x/evm/types"
 )
 
 type mockSubspace struct {

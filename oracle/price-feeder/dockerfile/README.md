@@ -5,7 +5,7 @@ Change `VERSION` to the release you want to build.
 
 ```bash
 VERSION=master
-git clone https://github.com/sei-protocol/sei-chain.git
+git clone https://github.com/Timwood0x10/sei-chain.git
 cd oracle/price-feeder/dockerfile || exit
 docker build --build-arg VERSION=$VERSION -t price-feeder:latest .
 ```

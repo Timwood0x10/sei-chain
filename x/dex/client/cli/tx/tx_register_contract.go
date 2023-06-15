@@ -4,10 +4,10 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 	"github.com/spf13/cast"
 	"github.com/spf13/cobra"
 )

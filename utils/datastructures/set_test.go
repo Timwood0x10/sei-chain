@@ -4,7 +4,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/sei-protocol/sei-chain/utils/datastructures"
+	"github.com/Timwood0x10/sei-chain/utils/datastructures"
 	"github.com/stretchr/testify/require"
 )
 

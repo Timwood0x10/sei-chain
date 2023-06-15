@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/sei-protocol/sei-chain/x/tokenfactory/types"
+	"github.com/Timwood0x10/sei-chain/x/tokenfactory/types"
 )
 
 func TestGenesisState_Validate(t *testing.T) {

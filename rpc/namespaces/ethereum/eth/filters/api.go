@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/sei-protocol/sei-chain/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Timwood0x10/sei-chain/blob/main/LICENSE
 package filters
 
 import (
@@ -21,8 +21,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/Timwood0x10/sei-chain/rpc/types"
 	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/sei-protocol/sei-chain/rpc/types"
 
 	"github.com/tendermint/tendermint/libs/log"
 
@@ -35,7 +35,7 @@ import (
 	"github.com/ethereum/go-ethereum/eth/filters"
 	"github.com/ethereum/go-ethereum/rpc"
 
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 )
 
 // FilterAPI gathers

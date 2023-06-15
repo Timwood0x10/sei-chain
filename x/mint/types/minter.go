@@ -4,9 +4,9 @@ import (
 	fmt "fmt"
 	"time"
 
+	"github.com/Timwood0x10/sei-chain/utils/metrics"
+	epochTypes "github.com/Timwood0x10/sei-chain/x/epoch/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/utils/metrics"
-	epochTypes "github.com/sei-protocol/sei-chain/x/epoch/types"
 )
 
 // NewMinter returns a new Minter object with the given inflation and annual

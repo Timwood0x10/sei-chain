@@ -5,14 +5,14 @@ import (
 	"errors"
 	"fmt"
 
+	appparams "github.com/Timwood0x10/sei-chain/app/params"
+	"github.com/Timwood0x10/sei-chain/utils"
+	"github.com/Timwood0x10/sei-chain/utils/datastructures"
+	"github.com/Timwood0x10/sei-chain/x/dex/contract"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
+	dexutils "github.com/Timwood0x10/sei-chain/x/dex/utils"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	appparams "github.com/sei-protocol/sei-chain/app/params"
-	"github.com/sei-protocol/sei-chain/utils"
-	"github.com/sei-protocol/sei-chain/utils/datastructures"
-	"github.com/sei-protocol/sei-chain/x/dex/contract"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
-	dexutils "github.com/sei-protocol/sei-chain/x/dex/utils"
 )
 
 func (k msgServer) RegisterContract(goCtx context.Context, msg *types.MsgRegisterContract) (*types.MsgRegisterContractResponse, error) {

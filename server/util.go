@@ -20,9 +20,9 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/Timwood0x10/sei-chain/server/config"
 	"github.com/gorilla/mux"
 	"github.com/improbable-eng/grpc-web/go/grpcweb"
-	"github.com/sei-protocol/sei-chain/server/config"
 	"github.com/spf13/cobra"
 	"golang.org/x/net/netutil"
 

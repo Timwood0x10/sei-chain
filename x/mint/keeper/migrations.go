@@ -3,9 +3,9 @@ package keeper
 import (
 	"fmt"
 
+	"github.com/Timwood0x10/sei-chain/x/mint/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/mint/types"
 )
 
 // Migrator is a struct for handling in-place store migrations.

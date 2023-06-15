@@ -21,7 +21,7 @@ import (
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/params"
 
-	evm "github.com/sei-protocol/sei-chain/x/evm/vm"
+	evm "github.com/Timwood0x10/sei-chain/x/evm/vm"
 )
 
 // GetPrecompiles returns all the precompiled contracts defined given the

@@ -1,7 +1,7 @@
 syntax = "proto3";
 package seiprotocol.seichain.dex;
 
-option go_package = "github.com/sei-protocol/sei-chain/x/dex/types";
+option go_package = "github.com/Timwood0x10/sei-chain/x/dex/types";
 import "gogoproto/gogo.proto";
 
 message SettlementEntry {

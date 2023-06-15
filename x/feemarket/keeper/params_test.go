@@ -3,7 +3,7 @@ package keeper_test
 import (
 	"reflect"
 
-	"github.com/sei-protocol/sei-chain/x/feemarket/types"
+	"github.com/Timwood0x10/sei-chain/x/feemarket/types"
 )
 
 func (suite *KeeperTestSuite) TestSetGetParams() {

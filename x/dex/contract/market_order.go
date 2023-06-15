@@ -3,11 +3,11 @@ package contract
 import (
 	"context"
 
+	"github.com/Timwood0x10/sei-chain/x/dex/keeper"
+	dexkeeperabci "github.com/Timwood0x10/sei-chain/x/dex/keeper/abci"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
+	dexutils "github.com/Timwood0x10/sei-chain/x/dex/utils"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/dex/keeper"
-	dexkeeperabci "github.com/sei-protocol/sei-chain/x/dex/keeper/abci"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
-	dexutils "github.com/sei-protocol/sei-chain/x/dex/utils"
 	"go.opentelemetry.io/otel/attribute"
 	otrace "go.opentelemetry.io/otel/trace"
 )

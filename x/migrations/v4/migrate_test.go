@@ -5,14 +5,14 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/sei-protocol/sei-chain/x/evm/types"
+	"github.com/Timwood0x10/sei-chain/x/evm/types"
 
+	"github.com/Timwood0x10/sei-chain/app"
+	"github.com/Timwood0x10/sei-chain/encoding"
+	v4 "github.com/Timwood0x10/sei-chain/x/evm/migrations/v4"
+	v4types "github.com/Timwood0x10/sei-chain/x/evm/migrations/v4/types"
 	"github.com/cosmos/cosmos-sdk/testutil"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/app"
-	"github.com/sei-protocol/sei-chain/encoding"
-	v4 "github.com/sei-protocol/sei-chain/x/evm/migrations/v4"
-	v4types "github.com/sei-protocol/sei-chain/x/evm/migrations/v4/types"
 )
 
 type mockSubspace struct {

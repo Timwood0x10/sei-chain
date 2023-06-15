@@ -3,11 +3,11 @@ package oracle_test
 import (
 	"testing"
 
+	"github.com/Timwood0x10/sei-chain/app"
+	"github.com/Timwood0x10/sei-chain/x/oracle"
+	oracletypes "github.com/Timwood0x10/sei-chain/x/oracle/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/sei-protocol/sei-chain/app"
-	"github.com/sei-protocol/sei-chain/x/oracle"
-	oracletypes "github.com/sei-protocol/sei-chain/x/oracle/types"
 	"github.com/stretchr/testify/require"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 )

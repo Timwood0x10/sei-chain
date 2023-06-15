@@ -22,22 +22,22 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"
 
+	cryptocodec "github.com/Timwood0x10/sei-chain/crypto/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/crypto"
-	cryptocodec "github.com/sei-protocol/sei-chain/crypto/codec"
 
+	"github.com/Timwood0x10/sei-chain/ethereum/eip712"
 	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/sei-protocol/sei-chain/ethereum/eip712"
 
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
 	"github.com/ethereum/go-ethereum/signer/core/apitypes"
 
-	"github.com/sei-protocol/sei-chain/types"
+	"github.com/Timwood0x10/sei-chain/types"
 
-	"github.com/sei-protocol/sei-chain/app"
+	"github.com/Timwood0x10/sei-chain/app"
 )
 
 type EIP712TxArgs struct {

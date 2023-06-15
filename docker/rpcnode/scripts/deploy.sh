@@ -4,7 +4,7 @@ NODE_ID=${ID:-0}
 # Set up env
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
-export BUILD_PATH=/sei-protocol/sei-chain/build
+export BUILD_PATH=/Timwood0x10/sei-chain/build
 export PATH=$GOBIN:$PATH:/usr/local/go/bin:$BUILD_PATH
 echo "export GOPATH=$HOME/go" >> /root/.bashrc
 echo "GOBIN=$GOPATH/bin" >> /root/.bashrc

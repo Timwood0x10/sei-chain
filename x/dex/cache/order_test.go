@@ -3,10 +3,10 @@ package dex_test
 import (
 	"testing"
 
+	keepertest "github.com/Timwood0x10/sei-chain/testutil/keeper"
+	dex "github.com/Timwood0x10/sei-chain/x/dex/cache"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	keepertest "github.com/sei-protocol/sei-chain/testutil/keeper"
-	dex "github.com/sei-protocol/sei-chain/x/dex/cache"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 	"github.com/stretchr/testify/require"
 )
 

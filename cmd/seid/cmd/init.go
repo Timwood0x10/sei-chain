@@ -7,9 +7,9 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/Timwood0x10/sei-chain/app/params"
 	"github.com/cosmos/go-bip39"
 	"github.com/pkg/errors"
-	"github.com/sei-protocol/sei-chain/app/params"
 	"github.com/spf13/cobra"
 	tmcfg "github.com/tendermint/tendermint/config"
 	"github.com/tendermint/tendermint/libs/cli"

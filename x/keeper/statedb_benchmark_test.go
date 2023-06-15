@@ -10,7 +10,7 @@ import (
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/sei-protocol/sei-chain/tests"
+	"github.com/Timwood0x10/sei-chain/tests"
 )
 
 func BenchmarkCreateAccountNew(b *testing.B) {

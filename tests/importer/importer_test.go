@@ -9,15 +9,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/sei-protocol/sei-chain/app"
+	"github.com/Timwood0x10/sei-chain/app"
 
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	evmkeeper "github.com/sei-protocol/sei-chain/x/evm/keeper"
-	"github.com/sei-protocol/sei-chain/x/evm/statedb"
+	evmkeeper "github.com/Timwood0x10/sei-chain/x/evm/keeper"
+	"github.com/Timwood0x10/sei-chain/x/evm/statedb"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/consensus/ethash"
@@ -28,7 +28,7 @@ import (
 	ethparams "github.com/ethereum/go-ethereum/params"
 	ethrlp "github.com/ethereum/go-ethereum/rlp"
 
-	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
+	"github.com/Timwood0x10/sei-chain/crypto/ethsecp256k1"
 	"github.com/tendermint/tendermint/abci/types"
 	"github.com/tendermint/tendermint/crypto/tmhash"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"

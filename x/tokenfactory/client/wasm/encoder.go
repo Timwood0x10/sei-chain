@@ -3,9 +3,9 @@ package wasm
 import (
 	"encoding/json"
 
+	"github.com/Timwood0x10/sei-chain/wasmbinding/bindings"
+	"github.com/Timwood0x10/sei-chain/x/tokenfactory/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/wasmbinding/bindings"
-	"github.com/sei-protocol/sei-chain/x/tokenfactory/types"
 )
 
 func EncodeTokenFactoryCreateDenom(rawMsg json.RawMessage, sender sdk.AccAddress) ([]sdk.Msg, error) {

@@ -4,8 +4,8 @@ import (
 	"math/big"
 	"testing"
 
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	"github.com/ethereum/go-ethereum/common"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 )

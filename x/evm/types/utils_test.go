@@ -5,16 +5,16 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/Timwood0x10/sei-chain/app"
+	"github.com/Timwood0x10/sei-chain/encoding"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	"github.com/cosmos/cosmos-sdk/client"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
 	proto "github.com/gogo/protobuf/proto"
-	"github.com/sei-protocol/sei-chain/app"
-	"github.com/sei-protocol/sei-chain/encoding"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 
-	"github.com/sei-protocol/sei-chain/tests"
+	"github.com/Timwood0x10/sei-chain/tests"
 
 	"github.com/stretchr/testify/require"
 

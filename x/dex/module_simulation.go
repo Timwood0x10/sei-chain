@@ -3,15 +3,15 @@ package dex
 import (
 	"math/rand"
 
+	"github.com/Timwood0x10/sei-chain/testutil/sample"
+	dexsimulation "github.com/Timwood0x10/sei-chain/x/dex/simulation"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 	"github.com/cosmos/cosmos-sdk/x/simulation"
-	"github.com/sei-protocol/sei-chain/testutil/sample"
-	dexsimulation "github.com/sei-protocol/sei-chain/x/dex/simulation"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 // avoid unused import issue

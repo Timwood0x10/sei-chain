@@ -3,10 +3,10 @@ package migrations
 import (
 	"encoding/binary"
 
+	"github.com/Timwood0x10/sei-chain/x/dex/keeper"
+	"github.com/Timwood0x10/sei-chain/x/dex/types"
 	"github.com/cosmos/cosmos-sdk/store/prefix"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/sei-protocol/sei-chain/x/dex/keeper"
-	"github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 func V6ToV7(ctx sdk.Context, storeKey sdk.StoreKey) error {

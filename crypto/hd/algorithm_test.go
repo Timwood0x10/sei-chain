@@ -13,9 +13,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec/types"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 
-	cryptocodec "github.com/sei-protocol/sei-chain/crypto/codec"
-	enccodec "github.com/sei-protocol/sei-chain/encoding/codec"
-	ethermint "github.com/sei-protocol/sei-chain/types"
+	cryptocodec "github.com/Timwood0x10/sei-chain/crypto/codec"
+	enccodec "github.com/Timwood0x10/sei-chain/encoding/codec"
+	ethermint "github.com/Timwood0x10/sei-chain/types"
 )
 
 var TestCodec amino.Codec

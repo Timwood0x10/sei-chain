@@ -3,7 +3,7 @@ package utils_test
 import (
 	"testing"
 
-	"github.com/sei-protocol/sei-chain/utils"
+	"github.com/Timwood0x10/sei-chain/utils"
 	"github.com/stretchr/testify/require"
 )
 

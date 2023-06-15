@@ -12,7 +12,7 @@
 // GNU Lesser General Public License for more details.
 //
 // You should have received a copy of the GNU Lesser General Public License
-// along with the Ethermint library. If not, see https://github.com/sei-protocol/sei-chain/blob/main/LICENSE
+// along with the Ethermint library. If not, see https://github.com/Timwood0x10/sei-chain/blob/main/LICENSE
 package rpc
 
 import (
@@ -23,16 +23,16 @@ import (
 
 	"github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/sei-protocol/sei-chain/rpc/backend"
-	"github.com/sei-protocol/sei-chain/rpc/namespaces/ethereum/debug"
-	"github.com/sei-protocol/sei-chain/rpc/namespaces/ethereum/eth"
-	"github.com/sei-protocol/sei-chain/rpc/namespaces/ethereum/eth/filters"
-	"github.com/sei-protocol/sei-chain/rpc/namespaces/ethereum/miner"
-	"github.com/sei-protocol/sei-chain/rpc/namespaces/ethereum/net"
-	"github.com/sei-protocol/sei-chain/rpc/namespaces/ethereum/personal"
-	"github.com/sei-protocol/sei-chain/rpc/namespaces/ethereum/txpool"
-	"github.com/sei-protocol/sei-chain/rpc/namespaces/ethereum/web3"
-	ethermint "github.com/sei-protocol/sei-chain/types"
+	"github.com/Timwood0x10/sei-chain/rpc/backend"
+	"github.com/Timwood0x10/sei-chain/rpc/namespaces/ethereum/debug"
+	"github.com/Timwood0x10/sei-chain/rpc/namespaces/ethereum/eth"
+	"github.com/Timwood0x10/sei-chain/rpc/namespaces/ethereum/eth/filters"
+	"github.com/Timwood0x10/sei-chain/rpc/namespaces/ethereum/miner"
+	"github.com/Timwood0x10/sei-chain/rpc/namespaces/ethereum/net"
+	"github.com/Timwood0x10/sei-chain/rpc/namespaces/ethereum/personal"
+	"github.com/Timwood0x10/sei-chain/rpc/namespaces/ethereum/txpool"
+	"github.com/Timwood0x10/sei-chain/rpc/namespaces/ethereum/web3"
+	ethermint "github.com/Timwood0x10/sei-chain/types"
 
 	rpcclient "github.com/tendermint/tendermint/rpc/jsonrpc/client"
 )

@@ -8,10 +8,10 @@ import (
 
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/sei-protocol/sei-chain/app"
-	"github.com/sei-protocol/sei-chain/encoding"
-	"github.com/sei-protocol/sei-chain/tests"
-	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
+	"github.com/Timwood0x10/sei-chain/app"
+	"github.com/Timwood0x10/sei-chain/encoding"
+	"github.com/Timwood0x10/sei-chain/tests"
+	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 )
 
 func TestTxEncoding(t *testing.T) {

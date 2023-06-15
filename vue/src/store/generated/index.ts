@@ -24,11 +24,11 @@ import IbcGoV3IbcApplicationsTransferV1 from './ibc-go/v3/ibc.applications.trans
 import IbcGoV3IbcCoreChannelV1 from './ibc-go/v3/ibc.core.channel.v1'
 import IbcGoV3IbcCoreClientV1 from './ibc-go/v3/ibc.core.client.v1'
 import IbcGoV3IbcCoreConnectionV1 from './ibc-go/v3/ibc.core.connection.v1'
-import SeiProtocolSeiChainSeiprotocolSeichainDex from './sei-protocol/sei-chain/seiprotocol.seichain.dex'
-import SeiProtocolSeiChainSeiprotocolSeichainEpoch from './sei-protocol/sei-chain/seiprotocol.seichain.epoch'
-import SeiProtocolSeiChainSeiprotocolSeichainMint from './sei-protocol/sei-chain/seiprotocol.seichain.mint'
-import SeiProtocolSeiChainSeiprotocolSeichainOracle from './sei-protocol/sei-chain/seiprotocol.seichain.oracle'
-import SeiProtocolSeiChainSeiprotocolSeichainTokenfactory from './sei-protocol/sei-chain/seiprotocol.seichain.tokenfactory'
+import SeiProtocolSeiChainSeiprotocolSeichainDex from './Timwood0x10/sei-chain/seiprotocol.seichain.dex'
+import SeiProtocolSeiChainSeiprotocolSeichainEpoch from './Timwood0x10/sei-chain/seiprotocol.seichain.epoch'
+import SeiProtocolSeiChainSeiprotocolSeichainMint from './Timwood0x10/sei-chain/seiprotocol.seichain.mint'
+import SeiProtocolSeiChainSeiprotocolSeichainOracle from './Timwood0x10/sei-chain/seiprotocol.seichain.oracle'
+import SeiProtocolSeiChainSeiprotocolSeichainTokenfactory from './Timwood0x10/sei-chain/seiprotocol.seichain.tokenfactory'
 
 
 export default { 

@@ -11,10 +11,10 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/sei-protocol/sei-chain/x/oracle"
-	"github.com/sei-protocol/sei-chain/x/oracle/keeper"
-	"github.com/sei-protocol/sei-chain/x/oracle/types"
-	"github.com/sei-protocol/sei-chain/x/oracle/utils"
+	"github.com/Timwood0x10/sei-chain/x/oracle"
+	"github.com/Timwood0x10/sei-chain/x/oracle/keeper"
+	"github.com/Timwood0x10/sei-chain/x/oracle/types"
+	"github.com/Timwood0x10/sei-chain/x/oracle/utils"
 )
 
 func TestOracleThreshold(t *testing.T) {

@@ -11,22 +11,22 @@ import (
 	"strings"
 	"time"
 
+	tokenfactorytypes "github.com/Timwood0x10/sei-chain/x/tokenfactory/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	tokenfactorytypes "github.com/sei-protocol/sei-chain/x/tokenfactory/types"
 
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
 	"github.com/cosmos/cosmos-sdk/std"
 
 	wasmtypes "github.com/CosmWasm/wasmd/x/wasm/types"
+	"github.com/Timwood0x10/sei-chain/app"
+	dextypes "github.com/Timwood0x10/sei-chain/x/dex/types"
+	oracletypes "github.com/Timwood0x10/sei-chain/x/oracle/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/x/auth/tx"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	distributiontypes "github.com/cosmos/cosmos-sdk/x/distribution/types"
-	"github.com/sei-protocol/sei-chain/app"
-	dextypes "github.com/sei-protocol/sei-chain/x/dex/types"
-	oracletypes "github.com/sei-protocol/sei-chain/x/oracle/types"
 )
 
 var TestConfig EncodingConfig

@@ -4,9 +4,9 @@ import (
 	"errors"
 	"os"
 
+	dextypes "github.com/Timwood0x10/sei-chain/x/dex/types"
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	dextypes "github.com/sei-protocol/sei-chain/x/dex/types"
 )
 
 type (

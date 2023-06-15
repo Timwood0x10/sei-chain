@@ -22,7 +22,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	"github.com/cosmos/cosmos-sdk/x/auth/tx"
 
-	enccodec "github.com/sei-protocol/sei-chain/encoding/codec"
+	enccodec "github.com/Timwood0x10/sei-chain/encoding/codec"
 )
 
 // MakeConfig creates an EncodingConfig for testing

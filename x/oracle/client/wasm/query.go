@@ -1,9 +1,9 @@
 package wasm
 
 import (
+	oraclekeeper "github.com/Timwood0x10/sei-chain/x/oracle/keeper"
+	"github.com/Timwood0x10/sei-chain/x/oracle/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	oraclekeeper "github.com/sei-protocol/sei-chain/x/oracle/keeper"
-	"github.com/sei-protocol/sei-chain/x/oracle/types"
 )
 
 type OracleWasmQueryHandler struct {

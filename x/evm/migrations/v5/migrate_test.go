@@ -7,11 +7,11 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 
-	"github.com/sei-protocol/sei-chain/app"
-	"github.com/sei-protocol/sei-chain/encoding"
-	v5 "github.com/sei-protocol/sei-chain/x/evm/migrations/v5"
-	v5types "github.com/sei-protocol/sei-chain/x/evm/migrations/v5/types"
-	"github.com/sei-protocol/sei-chain/x/evm/types"
+	"github.com/Timwood0x10/sei-chain/app"
+	"github.com/Timwood0x10/sei-chain/encoding"
+	v5 "github.com/Timwood0x10/sei-chain/x/evm/migrations/v5"
+	v5types "github.com/Timwood0x10/sei-chain/x/evm/migrations/v5/types"
+	"github.com/Timwood0x10/sei-chain/x/evm/types"
 )
 
 func TestMigrate(t *testing.T) {

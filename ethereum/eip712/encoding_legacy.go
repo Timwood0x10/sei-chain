@@ -25,8 +25,8 @@ import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	txTypes "github.com/cosmos/cosmos-sdk/types/tx"
 
+	"github.com/Timwood0x10/sei-chain/types"
 	apitypes "github.com/ethereum/go-ethereum/signer/core/apitypes"
-	"github.com/sei-protocol/sei-chain/types"
 )
 
 type aminoMessage struct {

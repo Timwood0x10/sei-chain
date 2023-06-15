@@ -15,8 +15,8 @@ import (
 	"github.com/gorilla/websocket"
 	"github.com/rs/zerolog"
 
-	"github.com/sei-protocol/sei-chain/oracle/price-feeder/config"
-	"github.com/sei-protocol/sei-chain/oracle/price-feeder/oracle/types"
+	"github.com/Timwood0x10/sei-chain/oracle/price-feeder/config"
+	"github.com/Timwood0x10/sei-chain/oracle/price-feeder/oracle/types"
 )
 
 const (
