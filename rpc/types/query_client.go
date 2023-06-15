@@ -25,8 +25,8 @@ import (
 
 	"github.com/cosmos/cosmos-sdk/client"
 
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
+	feemarkettypes "github.com/sei-protocol/sei-chain/x/feemarket/types"
 )
 
 // QueryClient defines a gRPC Client used for:

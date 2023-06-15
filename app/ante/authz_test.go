@@ -12,7 +12,7 @@ import (
 	"github.com/cosmos/cosmos-sdk/x/authz"
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
-	utiltx "github.com/evmos/ethermint/testutil/tx"
+	utiltx "github.com/sei-protocol/sei-chain/testutil/tx"
 
 	"github.com/sei-protocol/sei-chain/app/ante"
 

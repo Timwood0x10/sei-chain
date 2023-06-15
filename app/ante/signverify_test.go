@@ -5,8 +5,8 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/evmos/ethermint/tests"
 	"github.com/sei-protocol/sei-chain/app/ante"
+	"github.com/sei-protocol/sei-chain/tests"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 

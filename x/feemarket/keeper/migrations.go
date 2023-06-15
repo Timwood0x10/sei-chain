@@ -17,8 +17,8 @@ package keeper
 
 import (
 	sdk "github.com/cosmos/cosmos-sdk/types"
-	v4 "github.com/evmos/ethermint/x/feemarket/migrations/v4"
-	"github.com/evmos/ethermint/x/feemarket/types"
+	v4 "github.com/sei-protocol/sei-chain/x/feemarket/migrations/v4"
+	"github.com/sei-protocol/sei-chain/x/feemarket/types"
 )
 
 // Migrator is a struct for handling in-place store migrations.

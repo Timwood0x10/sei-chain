@@ -11,9 +11,9 @@ import (
 	tmrpcclient "github.com/tendermint/tendermint/rpc/client"
 	"google.golang.org/grpc/metadata"
 
-	"github.com/evmos/ethermint/tests"
 	"github.com/sei-protocol/sei-chain/rpc/backend/mocks"
 	rpctypes "github.com/sei-protocol/sei-chain/rpc/types"
+	"github.com/sei-protocol/sei-chain/tests"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 

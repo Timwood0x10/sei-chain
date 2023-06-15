@@ -3,7 +3,7 @@ package ante_test
 import (
 	"math/big"
 
-	"github.com/evmos/ethermint/tests"
+	"github.com/sei-protocol/sei-chain/tests"
 	"github.com/sei-protocol/sei-chain/x/evm/statedb"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )

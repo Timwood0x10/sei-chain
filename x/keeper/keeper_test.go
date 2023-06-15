@@ -28,11 +28,11 @@ import (
 	feemarkettypes "github.com/sei-protocol/sei-chain/x/feemarket/types"
 	tmjson "github.com/tendermint/tendermint/libs/json"
 
-	"github.com/evmos/ethermint/tests"
 	"github.com/sei-protocol/sei-chain/app"
 	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
 	"github.com/sei-protocol/sei-chain/encoding"
 	"github.com/sei-protocol/sei-chain/server/config"
+	"github.com/sei-protocol/sei-chain/tests"
 	ethermint "github.com/sei-protocol/sei-chain/types"
 	"github.com/sei-protocol/sei-chain/x/evm/statedb"
 	"github.com/sei-protocol/sei-chain/x/evm/types"

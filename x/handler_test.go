@@ -33,9 +33,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/evmos/ethermint/tests"
 	"github.com/sei-protocol/sei-chain/app"
 	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
+	"github.com/sei-protocol/sei-chain/tests"
 	ethermint "github.com/sei-protocol/sei-chain/types"
 	"github.com/sei-protocol/sei-chain/x/evm"
 	"github.com/sei-protocol/sei-chain/x/evm/statedb"

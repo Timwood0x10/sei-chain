@@ -26,10 +26,10 @@ import (
 	"github.com/ethereum/go-ethereum/core/vm"
 	"github.com/ethereum/go-ethereum/params"
 
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
 	"github.com/sei-protocol/sei-chain/x/evm/statedb"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 	evm "github.com/sei-protocol/sei-chain/x/evm/vm"
+	feemarkettypes "github.com/sei-protocol/sei-chain/x/feemarket/types"
 )
 
 // DynamicFeeEVMKeeper is a subset of EVMKeeper interface that supports dynamic fee checker

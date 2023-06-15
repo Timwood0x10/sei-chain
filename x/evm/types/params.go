@@ -23,7 +23,7 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/core/vm"
-	"github.com/evmos/ethermint/types"
+	"github.com/sei-protocol/sei-chain/types"
 )
 
 var (

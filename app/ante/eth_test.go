@@ -6,9 +6,9 @@ import (
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 
-	"github.com/evmos/ethermint/tests"
 	"github.com/sei-protocol/sei-chain/app/ante"
 	"github.com/sei-protocol/sei-chain/server/config"
+	"github.com/sei-protocol/sei-chain/tests"
 	ethermint "github.com/sei-protocol/sei-chain/types"
 	"github.com/sei-protocol/sei-chain/x/evm/statedb"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"

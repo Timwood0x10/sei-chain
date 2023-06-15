@@ -26,7 +26,7 @@ import (
 	txTypes "github.com/cosmos/cosmos-sdk/types/tx"
 
 	apitypes "github.com/ethereum/go-ethereum/signer/core/apitypes"
-	"github.com/evmos/ethermint/types"
+	"github.com/sei-protocol/sei-chain/types"
 )
 
 type aminoMessage struct {

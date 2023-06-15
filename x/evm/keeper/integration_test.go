@@ -13,10 +13,10 @@ import (
 	authtx "github.com/cosmos/cosmos-sdk/x/auth/tx"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
-	"github.com/evmos/ethermint/tests"
 	"github.com/sei-protocol/sei-chain/app"
 	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
 	"github.com/sei-protocol/sei-chain/encoding"
+	"github.com/sei-protocol/sei-chain/tests"
 	"github.com/sei-protocol/sei-chain/testutil"
 	"github.com/sei-protocol/sei-chain/x/feemarket/types"
 

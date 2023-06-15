@@ -18,7 +18,6 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmrpctypes "github.com/tendermint/tendermint/rpc/coretypes"
 
-	"github.com/evmos/ethermint/tests"
 	"github.com/sei-protocol/sei-chain/app"
 	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
 	"github.com/sei-protocol/sei-chain/crypto/hd"
@@ -26,6 +25,7 @@ import (
 	"github.com/sei-protocol/sei-chain/indexer"
 	"github.com/sei-protocol/sei-chain/rpc/backend/mocks"
 	rpctypes "github.com/sei-protocol/sei-chain/rpc/types"
+	"github.com/sei-protocol/sei-chain/tests"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 )
 

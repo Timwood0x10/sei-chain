@@ -34,9 +34,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/module"
 	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
 
-	"github.com/evmos/ethermint/x/feemarket/client/cli"
-	"github.com/evmos/ethermint/x/feemarket/keeper"
-	"github.com/evmos/ethermint/x/feemarket/types"
+	"github.com/sei-protocol/sei-chain/x/feemarket/client/cli"
+	"github.com/sei-protocol/sei-chain/x/feemarket/keeper"
+	"github.com/sei-protocol/sei-chain/x/feemarket/types"
 )
 
 var (

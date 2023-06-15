@@ -13,7 +13,7 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	ethlogger "github.com/ethereum/go-ethereum/eth/tracers/logger"
 	ethparams "github.com/ethereum/go-ethereum/params"
-	"github.com/evmos/ethermint/tests"
+	"github.com/sei-protocol/sei-chain/tests"
 	"github.com/sei-protocol/sei-chain/x/evm/statedb"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"

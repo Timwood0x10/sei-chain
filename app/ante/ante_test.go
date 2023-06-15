@@ -27,9 +27,9 @@ import (
 
 	"github.com/ethereum/go-ethereum/core/types"
 	ethparams "github.com/ethereum/go-ethereum/params"
-	"github.com/evmos/ethermint/tests"
 	"github.com/sei-protocol/sei-chain/app/ante"
 	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
+	"github.com/sei-protocol/sei-chain/tests"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"

@@ -21,10 +21,10 @@ import (
 	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
 	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
 
-	"github.com/evmos/ethermint/tests"
 	"github.com/sei-protocol/sei-chain/app"
 	"github.com/sei-protocol/sei-chain/crypto/ethsecp256k1"
 	"github.com/sei-protocol/sei-chain/encoding"
+	"github.com/sei-protocol/sei-chain/tests"
 	ethermint "github.com/sei-protocol/sei-chain/types"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 	"github.com/sei-protocol/sei-chain/x/feemarket/types"

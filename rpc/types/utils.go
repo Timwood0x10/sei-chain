@@ -29,8 +29,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/client"
 	errortypes "github.com/cosmos/cosmos-sdk/types/errors"
 
-	feemarkettypes "github.com/evmos/ethermint/x/feemarket/types"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
+	feemarkettypes "github.com/sei-protocol/sei-chain/x/feemarket/types"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"

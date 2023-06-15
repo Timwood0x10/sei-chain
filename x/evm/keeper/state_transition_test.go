@@ -12,7 +12,7 @@ import (
 	"github.com/ethereum/go-ethereum/core"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
-	"github.com/evmos/ethermint/tests"
+	"github.com/sei-protocol/sei-chain/tests"
 	"github.com/sei-protocol/sei-chain/x/evm/keeper"
 	"github.com/sei-protocol/sei-chain/x/evm/statedb"
 	"github.com/sei-protocol/sei-chain/x/evm/types"

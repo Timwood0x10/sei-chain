@@ -14,7 +14,7 @@ import (
 	"github.com/sei-protocol/sei-chain/encoding"
 	evmtypes "github.com/sei-protocol/sei-chain/x/evm/types"
 
-	"github.com/evmos/ethermint/tests"
+	"github.com/sei-protocol/sei-chain/tests"
 
 	"github.com/stretchr/testify/require"
 
