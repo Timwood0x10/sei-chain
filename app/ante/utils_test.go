@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/suite"
 
 	"github.com/Timwood0x10/sei-chain/ethereum/eip712"
-	"github.com/Timwood0x10/sei-chain/testutil"
+
 	utiltx "github.com/Timwood0x10/sei-chain/testutil/tx"
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/x/auth/migrations/legacytx"

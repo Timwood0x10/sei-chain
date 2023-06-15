@@ -11,7 +11,7 @@ import (
 	"github.com/Timwood0x10/sei-chain/crypto/ethsecp256k1"
 	"github.com/Timwood0x10/sei-chain/encoding"
 	"github.com/Timwood0x10/sei-chain/tests"
-	"github.com/Timwood0x10/sei-chain/testutil"
+
 	"github.com/Timwood0x10/sei-chain/x/feemarket/types"
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"

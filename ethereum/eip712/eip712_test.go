@@ -22,7 +22,7 @@ import (
 	"github.com/Timwood0x10/sei-chain/app"
 	"github.com/Timwood0x10/sei-chain/cmd/config"
 	"github.com/Timwood0x10/sei-chain/encoding"
-	"github.com/Timwood0x10/sei-chain/testutil"
+
 	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
