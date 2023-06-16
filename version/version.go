@@ -13,29 +13,38 @@
 //
 // You should have received a copy of the GNU Lesser General Public License
 // along with the Ethermint library. If not, see https://github.com/evmos/ethermint/blob/main/LICENSE
-package web3
+package version
 
 import (
-	"github.com/Timwood0x10/sei-chain/version"
-
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/crypto"
+	"fmt"
+	"runtime"
 )
 
-// PublicAPI is the web3_ prefixed set of APIs in the Web3 JSON-RPC spec.
-type PublicAPI struct{}
+var (
+	AppVersion = ""
+	GitCommit  = ""
+	BuildDate  = ""
 
-// NewPublicAPI creates an instance of the Web3 API.
-func NewPublicAPI() *PublicAPI {
-	return &PublicAPI{}
+	GoVersion = ""
+	GoArch    = ""
+)
+
+func init() {
+	if len(AppVersion) == 0 {
+		AppVersion = "dev"
+	}
+
+	GoVersion = runtime.Version()
+	GoArch = runtime.GOARCH
 }
 
-// ClientVersion returns the client version in the Web3 user agent format.
-func (a *PublicAPI) ClientVersion() string {
-	return version.Version()
-}
-
-// Sha3 returns the keccak-256 hash of the passed-in input.
-func (a *PublicAPI) Sha3(input string) hexutil.Bytes {
-	return crypto.Keccak256(hexutil.Bytes(input))
+func Version() string {
+	return fmt.Sprintf(
+		"Version %s (%s)\nCompiled at %s using Go %s (%s)",
+		AppVersion,
+		GitCommit,
+		BuildDate,
+		GoVersion,
+		GoArch,
+	)
 }
