@@ -47,13 +47,13 @@ var PowerReduction = sdkmath.NewIntFromBigInt(new(big.Int).Exp(big.NewInt(10), b
 // NewPhotonCoin is a utility function that returns an "aphoton" coin with the given sdkmath.Int amount.
 // The function will panic if the provided amount is negative.
 func NewPhotonCoin(amount sdkmath.Int) sdk.Coin {
-	return sdk.NewCoin(AttoPhoton, amount)
+	return sdk.NewCoin(AttoPhoton, sdk.NewIntFromBigInt(amount.BigInt()))
 }
 
 // NewPhotonDecCoin is a utility function that returns an "aphoton" decimal coin with the given sdkmath.Int amount.
 // The function will panic if the provided amount is negative.
 func NewPhotonDecCoin(amount sdkmath.Int) sdk.DecCoin {
-	return sdk.NewDecCoin(AttoPhoton, amount)
+	return sdk.NewDecCoin(AttoPhoton, sdk.NewIntFromBigInt(amount.BigInt()))
 }
 
 // NewPhotonCoinInt64 is a utility function that returns an "aphoton" coin with the given int64 amount.
