@@ -16,10 +16,10 @@
 package types
 
 import (
+	sdk "github.com/cosmos/cosmos-sdk/types"
 	"math/big"
 
 	errorsmod "cosmossdk.io/errors"
-	sdkmath "cosmossdk.io/math"
 	errortypes "github.com/cosmos/cosmos-sdk/types/errors"
 
 	"github.com/ethereum/go-ethereum/common"
@@ -41,18 +41,16 @@ func newAccessListTx(tx *ethtypes.Transaction) (*AccessListTx, error) {
 	}
 
 	if tx.Value() != nil {
-		amountInt, err := types.SafeNewIntFromBigInt(tx.Value())
-		if err != nil {
-			return nil, err
-		}
+		//amountInt, err := types.SafeNewIntFromBigInt(tx.Value())
+		amountInt := sdk.NewIntFromBigInt(tx.Value())
+
 		txData.Amount = &amountInt
 	}
 
 	if tx.GasPrice() != nil {
-		gasPriceInt, err := types.SafeNewIntFromBigInt(tx.GasPrice())
-		if err != nil {
-			return nil, err
-		}
+		//gasPriceInt, err := types.SafeNewIntFromBigInt(tx.GasPrice())
+		gasPriceInt := sdk.NewIntFromBigInt(tx.GasPrice())
+
 		txData.GasPrice = &gasPriceInt
 	}
 
@@ -190,7 +188,7 @@ func (tx *AccessListTx) SetSignatureValues(chainID, v, r, s *big.Int) {
 		tx.S = s.Bytes()
 	}
 	if chainID != nil {
-		chainIDInt := sdkmath.NewIntFromBigInt(chainID)
+		chainIDInt := sdk.NewIntFromBigInt(chainID)
 		tx.ChainID = &chainIDInt
 	}
 }
