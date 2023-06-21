@@ -19,7 +19,7 @@ import (
 	"math/big"
 
 	errorsmod "cosmossdk.io/errors"
-	sdkmath "cosmossdk.io/math"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 	errortypes "github.com/cosmos/cosmos-sdk/types/errors"
 
 	"github.com/ethereum/go-ethereum/common"
@@ -41,26 +41,18 @@ func newDynamicFeeTx(tx *ethtypes.Transaction) (*DynamicFeeTx, error) {
 	}
 
 	if tx.Value() != nil {
-		amountInt, err := types.SafeNewIntFromBigInt(tx.Value())
-		if err != nil {
-			return nil, err
-		}
+		amountInt := sdk.NewIntFromBigInt(tx.Value())
 		txData.Amount = &amountInt
 	}
 
 	if tx.GasFeeCap() != nil {
-		gasFeeCapInt, err := types.SafeNewIntFromBigInt(tx.GasFeeCap())
-		if err != nil {
-			return nil, err
-		}
+		gasFeeCapInt := sdk.NewIntFromBigInt(tx.GasFeeCap())
 		txData.GasFeeCap = &gasFeeCapInt
 	}
 
 	if tx.GasTipCap() != nil {
-		gasTipCapInt, err := types.SafeNewIntFromBigInt(tx.GasTipCap())
-		if err != nil {
-			return nil, err
-		}
+		gasTipCapInt := sdk.NewIntFromBigInt(tx.GasTipCap())
+
 		txData.GasTipCap = &gasTipCapInt
 	}
 
@@ -203,7 +195,7 @@ func (tx *DynamicFeeTx) SetSignatureValues(chainID, v, r, s *big.Int) {
 		tx.S = s.Bytes()
 	}
 	if chainID != nil {
-		chainIDInt := sdkmath.NewIntFromBigInt(chainID)
+		chainIDInt := sdk.NewIntFromBigInt(chainID)
 		tx.ChainID = &chainIDInt
 	}
 }

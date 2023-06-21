@@ -20,6 +20,7 @@ import (
 
 	errorsmod "cosmossdk.io/errors"
 	"github.com/Timwood0x10/sei-chain/types"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/ethereum/go-ethereum/common"
 	ethtypes "github.com/ethereum/go-ethereum/core/types"
 )
@@ -37,18 +38,14 @@ func newLegacyTx(tx *ethtypes.Transaction) (*LegacyTx, error) {
 	}
 
 	if tx.Value() != nil {
-		amountInt, err := types.SafeNewIntFromBigInt(tx.Value())
-		if err != nil {
-			return nil, err
-		}
+		amountInt := sdk.NewIntFromBigInt(tx.Value())
+
 		txData.Amount = &amountInt
 	}
 
 	if tx.GasPrice() != nil {
-		gasPriceInt, err := types.SafeNewIntFromBigInt(tx.GasPrice())
-		if err != nil {
-			return nil, err
-		}
+		gasPriceInt := sdk.NewIntFromBigInt(tx.GasPrice())
+
 		txData.GasPrice = &gasPriceInt
 	}
 
