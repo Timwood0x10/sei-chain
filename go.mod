@@ -322,7 +322,7 @@ replace (
 	github.com/CosmWasm/wasmd => github.com/sei-protocol/sei-wasmd v0.0.2
 	github.com/btcsuite/btcd/btcec => github.com/btcsuite/btcd v0.22.1
 	github.com/confio/ics23/go => github.com/cosmos/cosmos-sdk/ics23/go v0.8.0
-	github.com/cosmos/cosmos-sdk => github.com/Timwood0x10/sei-cosmos v0.0.0-20230620060339-e4809b8eb272
+	github.com/cosmos/cosmos-sdk => github.com/Timwood0x10/sei-cosmos v0.0.0-20230621065417-b0d06f9654f9
 	github.com/cosmos/iavl => github.com/sei-protocol/sei-iavl v0.1.4
 	github.com/cosmos/ibc-go/v3 => github.com/sei-protocol/sei-ibc-go/v3 v3.1.0
 	// github.com/ethereum/go-ethereum => github.com/ethereum/go-ethereum v1.12.0

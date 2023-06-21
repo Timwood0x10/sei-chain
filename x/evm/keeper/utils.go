@@ -124,7 +124,7 @@ func VerifyFee(
 		return sdk.Coins{}, nil
 	}
 
-	return sdk.Coins{{Denom: denom, Amount: sdkmath.NewIntFromBigInt(feeAmt)}}, nil
+	return sdk.Coins{{Denom: denom, Amount: sdk.NewIntFromBigInt(feeAmt)}}, nil
 }
 
 // CheckSenderBalance validates that the tx cost value is positive and that the

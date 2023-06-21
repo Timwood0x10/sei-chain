@@ -96,8 +96,8 @@ github.com/Shopify/sarama v1.19.0/go.mod h1:FVkBWblsNy7DGZRfXLU0O9RCGt5g3g3yEuWX
 github.com/Shopify/toxiproxy v2.1.4+incompatible/go.mod h1:OXgGpZ6Cli1/URJOF1DMxUHB2q5Ap20/P/eIdh4G0pI=
 github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6 h1:fLjPD/aNc3UIOA6tDi6QXUemppXK3P9BI7mr2hd6gx8=
 github.com/StackExchange/wmi v0.0.0-20180116203802-5d049714c4a6/go.mod h1:3eOhrUMpNV+6aFIbp5/iudMxNCF27Vw2OZgy4xEx0Fg=
-github.com/Timwood0x10/sei-cosmos v0.0.0-20230620060339-e4809b8eb272 h1:KRpwWB5r2gq1hl3lPvbLhskBgIPFXPHplKQnXPlwLTo=
-github.com/Timwood0x10/sei-cosmos v0.0.0-20230620060339-e4809b8eb272/go.mod h1:uO+RKSY0rTd3M1hi/gmaTnbwRlKBH1vc0LhUq1APXe0=
+github.com/Timwood0x10/sei-cosmos v0.0.0-20230621065417-b0d06f9654f9 h1:2D7cOLJ66LpF/mvKOOgedO3edWn31nRJlIM8aYG7oj4=
+github.com/Timwood0x10/sei-cosmos v0.0.0-20230621065417-b0d06f9654f9/go.mod h1:uO+RKSY0rTd3M1hi/gmaTnbwRlKBH1vc0LhUq1APXe0=
 github.com/Timwood0x10/sei-tendermint v0.0.0-20230620033258-c7843ff5e746 h1:MmiKUMJLfdkHdRH01X/PDVAZujLS1zX0kcNi6yaqm4A=
 github.com/Timwood0x10/sei-tendermint v0.0.0-20230620033258-c7843ff5e746/go.mod h1:hjzY2H5EIFQhZTR/DwWKH1BnwVeMdcFhgpJF/v6f62c=
 github.com/VictoriaMetrics/fastcache v1.6.0 h1:C/3Oi3EiBCqufydp1neRZkqcwmEiuRT9c3fqvvgKm5o=
