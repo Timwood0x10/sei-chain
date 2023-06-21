@@ -4,12 +4,12 @@ import (
 	"math/big"
 	"testing"
 
-	sdkmath "cosmossdk.io/math"
+	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/stretchr/testify/require"
 )
 
 func TestTxData_chainID(t *testing.T) {
-	chainID := sdkmath.NewInt(1)
+	chainID := sdk.NewInt(1)
 
 	testCases := []struct {
 		msg        string
