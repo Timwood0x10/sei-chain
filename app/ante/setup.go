@@ -20,7 +20,6 @@ import (
 	"strconv"
 
 	errorsmod "cosmossdk.io/errors"
-	sdkmath "cosmossdk.io/math"
 	evmtypes "github.com/Timwood0x10/sei-chain/x/evm/types"
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"
@@ -190,7 +189,7 @@ func (vbd EthValidateBasicDecorator) AnteHandle(ctx sdk.Context, tx sdk.Tx, simu
 			return ctx, errorsmod.Wrap(ethtypes.ErrTxTypeNotSupported, "dynamic fee tx not supported")
 		}
 
-		txFee = txFee.Add(sdk.Coin{Denom: evmDenom, Amount: sdkmath.NewIntFromBigInt(txData.Fee())})
+		txFee = txFee.Add(sdk.Coin{Denom: evmDenom, Amount: sdk.NewIntFromBigInt(txData.Fee())})
 	}
 
 	if !authInfo.Fee.Amount.IsEqual(txFee) {
