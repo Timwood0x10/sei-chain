@@ -8,7 +8,6 @@ import (
 	"testing"
 	"time"
 
-	sdkmath "cosmossdk.io/math"
 	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
 	"github.com/stretchr/testify/suite"
 
@@ -318,7 +317,7 @@ func (suite AnteTestSuite) TestAnteHandler() {
 
 				expFee := txData.Fee()
 				invalidFee := new(big.Int).Add(expFee, big.NewInt(1))
-				invalidFeeAmount := sdk.Coins{sdk.NewCoin(evmtypes.DefaultEVMDenom, sdkmath.NewIntFromBigInt(invalidFee))}
+				invalidFeeAmount := sdk.Coins{sdk.NewCoin(evmtypes.DefaultEVMDenom, sdk.NewIntFromBigInt(invalidFee))}
 				txBuilder.SetFeeAmount(invalidFeeAmount)
 				return txBuilder.GetTx()
 			}, false, false, false,
@@ -344,7 +343,7 @@ func (suite AnteTestSuite) TestAnteHandler() {
 			func() sdk.Tx {
 				from := acc.GetAddress()
 				gas := uint64(200000)
-				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdkmath.NewInt(100*int64(gas))))
+				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdk.NewInt(100*int64(gas))))
 				txBuilder := suite.CreateTestEIP712TxBuilderMsgSend(from, privKey, "ethermint_9000-1", gas, amount)
 				return txBuilder.GetTx()
 			}, false, false, true,
@@ -354,7 +353,7 @@ func (suite AnteTestSuite) TestAnteHandler() {
 			func() sdk.Tx {
 				from := acc.GetAddress()
 				gas := uint64(200000)
-				coinAmount := sdk.NewCoin(evmtypes.DefaultEVMDenom, sdkmath.NewInt(100*int64(gas)))
+				coinAmount := sdk.NewCoin(evmtypes.DefaultEVMDenom, sdk.NewInt(100*int64(gas)))
 				amount := sdk.NewCoins(coinAmount)
 				txBuilder := suite.CreateTestEIP712TxBuilderMsgDelegate(from, privKey, "ethermint_9000-1", gas, amount)
 				return txBuilder.GetTx()
@@ -506,7 +505,7 @@ func (suite AnteTestSuite) TestAnteHandler() {
 			func() sdk.Tx {
 				from := acc.GetAddress()
 				gas := uint64(200000)
-				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdkmath.NewInt(100*int64(gas))))
+				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdk.NewInt(100*int64(gas))))
 				txBuilder := suite.CreateTestEIP712TxBuilderMsgSend(from, privKey, "ethermint_9002-1", gas, amount)
 				return txBuilder.GetTx()
 			}, false, false, false,
@@ -516,10 +515,10 @@ func (suite AnteTestSuite) TestAnteHandler() {
 			func() sdk.Tx {
 				from := acc.GetAddress()
 				gas := uint64(200000)
-				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdkmath.NewInt(100*int64(gas))))
+				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdk.NewInt(100*int64(gas))))
 				txBuilder := suite.CreateTestEIP712TxBuilderMsgSend(from, privKey, "ethermint_9001-1", gas, amount)
 				txBuilder.SetGasLimit(uint64(300000))
-				txBuilder.SetFeeAmount(sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdkmath.NewInt(30))))
+				txBuilder.SetFeeAmount(sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdk.NewInt(30))))
 				return txBuilder.GetTx()
 			}, false, false, false,
 		},
@@ -528,7 +527,7 @@ func (suite AnteTestSuite) TestAnteHandler() {
 			func() sdk.Tx {
 				from := acc.GetAddress()
 				gas := uint64(200000)
-				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdkmath.NewInt(100*int64(gas))))
+				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdk.NewInt(100*int64(gas))))
 				txBuilder := suite.CreateTestEIP712TxBuilderMsgSend(from, privKey, "ethermint_9001-1", gas, amount)
 				sigsV2 := signing.SignatureV2{}
 				txBuilder.SetSignatures(sigsV2)
@@ -540,7 +539,7 @@ func (suite AnteTestSuite) TestAnteHandler() {
 			func() sdk.Tx {
 				from := acc.GetAddress()
 				gas := uint64(200000)
-				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdkmath.NewInt(100*int64(gas))))
+				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdk.NewInt(100*int64(gas))))
 				txBuilder := suite.CreateTestEIP712TxBuilderMsgSend(from, privKey, "ethermint_9001-1", gas, amount)
 				nonce, err := suite.app.AccountKeeper.GetSequence(suite.ctx, acc.GetAddress())
 				suite.Require().NoError(err)
@@ -560,7 +559,7 @@ func (suite AnteTestSuite) TestAnteHandler() {
 			func() sdk.Tx {
 				from := acc.GetAddress()
 				gas := uint64(200000)
-				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdkmath.NewInt(100*int64(gas))))
+				amount := sdk.NewCoins(sdk.NewCoin(evmtypes.DefaultEVMDenom, sdk.NewInt(100*int64(gas))))
 				txBuilder := suite.CreateTestEIP712TxBuilderMsgSend(from, privKey, "ethermint_9001-1", gas, amount)
 				nonce, err := suite.app.AccountKeeper.GetSequence(suite.ctx, acc.GetAddress())
 				suite.Require().NoError(err)

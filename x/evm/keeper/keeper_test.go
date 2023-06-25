@@ -148,7 +148,7 @@ func (suite *KeeperTestSuite) SetupAppWithT(checkTx bool, t require.TestingT) {
 
 	if suite.mintFeeCollector {
 		// mint some coin to fee collector
-		coins := sdk.NewCoins(sdk.NewCoin(types.DefaultEVMDenom, sdkmath.NewInt(int64(params.TxGas)-1)))
+		coins := sdk.NewCoins(sdk.NewCoin(types.DefaultEVMDenom, sdk.NewInt(int64(params.TxGas)-1)))
 		genesisState := app.NewTestGenesisState(suite.app.AppCodec())
 		balances := []banktypes.Balance{
 			{

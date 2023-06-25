@@ -2,6 +2,7 @@ package keeper_test
 
 import (
 	"encoding/json"
+	"gocode/cosmos-sdk/x/bank/testutil"
 	"math/big"
 	"strings"
 
@@ -42,7 +43,7 @@ var _ = Describe("Feemarket", func() {
 	Describe("Performing Cosmos transactions", func() {
 		Context("with min-gas-prices (local) < MinGasPrices (feemarket param)", func() {
 			BeforeEach(func() {
-				privKey, msg = setupTestWithContext("1", sdk.NewDec(3), sdk.ZeroInt())
+				privKey, msg = setupTestWithContext("1", sdk.NewDec(3), sdkmath.ZeroInt())
 			})
 
 			Context("during CheckTx", func() {
@@ -84,7 +85,7 @@ var _ = Describe("Feemarket", func() {
 
 		Context("with min-gas-prices (local) == MinGasPrices (feemarket param)", func() {
 			BeforeEach(func() {
-				privKey, msg = setupTestWithContext("3", sdk.NewDec(3), sdk.ZeroInt())
+				privKey, msg = setupTestWithContext("3", sdk.NewDec(3), sdkmath.ZeroInt())
 			})
 
 			Context("during CheckTx", func() {
@@ -126,7 +127,7 @@ var _ = Describe("Feemarket", func() {
 
 		Context("with MinGasPrices (feemarket param) < min-gas-prices (local)", func() {
 			BeforeEach(func() {
-				privKey, msg = setupTestWithContext("5", sdk.NewDec(3), sdk.NewInt(5))
+				privKey, msg = setupTestWithContext("5", sdk.NewDec(3), sdkmath.NewInt(5))
 			})
 			Context("during CheckTx", func() {
 				It("should reject transactions with gasPrice < MinGasPrices", func() {
@@ -459,7 +460,7 @@ func setupTest(localMinGasPrices string) (*ethsecp256k1.PrivKey, banktypes.MsgSe
 	setupChain(localMinGasPrices)
 
 	privKey, address := generateKey()
-	amount, ok := sdkmath.NewIntFromString("10000000000000000000")
+	amount, ok := sdk.NewIntFromString("10000000000000000000")
 	s.Require().True(ok)
 	initBalance := sdk.Coins{sdk.Coin{
 		Denom:  s.denom,
@@ -472,7 +473,7 @@ func setupTest(localMinGasPrices string) (*ethsecp256k1.PrivKey, banktypes.MsgSe
 		ToAddress:   address.String(),
 		Amount: sdk.Coins{sdk.Coin{
 			Denom:  s.denom,
-			Amount: sdkmath.NewInt(10000),
+			Amount: sdk.NewInt(10000),
 		}},
 	}
 	s.Commit()
