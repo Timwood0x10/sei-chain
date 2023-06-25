@@ -42,6 +42,7 @@ cloud.google.com/go/storage v1.14.0/go.mod h1:GrKmX003DSIwi9o29oFT7YDnHYwZoctc3f
 collectd.org v0.3.0/go.mod h1:A/8DzQBkF6abtvrT2j/AU/4tiBgJWYyh0y/oB/4MlWE=
 cosmossdk.io/api v0.4.2 h1:lQBMl4xINnMnBOR/tQLtjlDnR4exr4e6/SfHR8PILE0=
 cosmossdk.io/core v0.8.0 h1:LcJnu52E1a8f8E317VfQ1xK/RZe+IuhMNQAjnDLh25M=
+cosmossdk.io/core v0.8.0/go.mod h1:LF6VLOv2DdCiaHxYVmr0MZcZpaSM9ZgvyrQSYTeg6D0=
 cosmossdk.io/depinject v1.0.0-alpha.3 h1:6evFIgj//Y3w09bqOUOzEpFj5tsxBqdc5CfkO7z+zfw=
 cosmossdk.io/errors v1.0.0-beta.7 h1:gypHW76pTQGVnHKo6QBkb4yFOJjC+sUGRc5Al3Odj1w=
 cosmossdk.io/errors v1.0.0-beta.7/go.mod h1:mz6FQMJRku4bY7aqS/Gwfcmr/ue91roMEKAmDUDpBfE=
@@ -507,6 +508,7 @@ github.com/golang/mock v1.4.1/go.mod h1:UOMv5ysSaYNkG+OFQykRIcU/QvvxJf3p21QfJ2Bt
 github.com/golang/mock v1.4.3/go.mod h1:UOMv5ysSaYNkG+OFQykRIcU/QvvxJf3p21QfJ2Bt3cw=
 github.com/golang/mock v1.4.4/go.mod h1:l3mdAwkq5BuhzHwde/uurv3sEJeZMXNpwsxVWU71h+4=
 github.com/golang/mock v1.6.0 h1:ErTB+efbowRARo13NNdxyJji2egdxLGQhRaY+DUumQc=
+github.com/golang/mock v1.6.0/go.mod h1:p6yTPP+5HYm5mzsMV8JkE6ZKdX+/wYM6Hr+LicevLPs=
 github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
 github.com/golang/protobuf v1.3.0/go.mod h1:Qd/q+1AKNOZr9uGQzbzCmRO6sUih6GTPZv6a1/R87v0=
 github.com/golang/protobuf v1.3.1/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=

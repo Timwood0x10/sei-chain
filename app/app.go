@@ -5,14 +5,15 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	srvflags "github.com/Timwood0x10/sei-chain/server/flags"
-	feemarkettypes "github.com/Timwood0x10/sei-chain/x/feemarket/types"
 	"io"
 	"os"
 	"path/filepath"
 	"strings"
 	"sync"
 	"time"
+
+	srvflags "github.com/Timwood0x10/sei-chain/server/flags"
+	feemarkettypes "github.com/Timwood0x10/sei-chain/x/feemarket/types"
 
 	storetypes "github.com/cosmos/cosmos-sdk/store/types"
 
@@ -331,7 +332,7 @@ type App struct {
 
 	TokenFactoryKeeper tokenfactorykeeper.Keeper
 
-	EvmKeeper evmkeeper.Keeper
+	EvmKeeper *evmkeeper.Keeper
 
 	FeeMarketKeeper feemaketkeeper.Keeper
 
