@@ -21,7 +21,6 @@ import (
 	"time"
 
 	errorsmod "cosmossdk.io/errors"
-	sdkmath "cosmossdk.io/math"
 	"github.com/Timwood0x10/sei-chain/crypto/ethsecp256k1"
 	rpctypes "github.com/Timwood0x10/sei-chain/rpc/types"
 	"github.com/Timwood0x10/sei-chain/server/config"
@@ -150,7 +149,7 @@ func (b *Backend) SetEtherbase(etherbase common.Address) bool {
 	txFactory = txFactory.WithGas(gas)
 
 	value := new(big.Int).SetUint64(gas * minGasPriceValue.Ceil().TruncateInt().Uint64())
-	fees := sdk.Coins{sdk.NewCoin(denom, sdkmath.NewIntFromBigInt(value))}
+	fees := sdk.Coins{sdk.NewCoin(denom, sdk.NewIntFromBigInt(value))}
 	builder.SetFeeAmount(fees)
 	builder.SetGasLimit(gas)
 
