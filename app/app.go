@@ -396,6 +396,7 @@ func New(
 		epochmoduletypes.StoreKey,
 		tokenfactorytypes.StoreKey,
 		evmtypes.StoreKey,
+		feemarkettypes.StoreKey,
 		// this line is used by starport scaffolding # stargate/app/storeKey
 	)
 	tkeys := sdk.NewTransientStoreKeys(paramstypes.TStoreKey)
